@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import WhyUs from "@/components/WhyUs";
 import HowItWorks from "@/components/HowItWorks";
 import EquipmentGrid from "@/components/EquipmentGrid";
-import BryanCarr from "@/components/BryanCarr";
+import TeamSection from "@/components/TeamSection";
 import LeadForms from "@/components/LeadForms";
 import UpcomingAuctions from "@/components/UpcomingAuctions";
 import Testimonials from "@/components/Testimonials";
@@ -19,7 +19,7 @@ export default function App() {
         <WhyUs />
         <HowItWorks />
         <EquipmentGrid />
-        <BryanCarr />
+        <TeamSection />
         <LeadForms />
         <UpcomingAuctions />
         <Testimonials />
