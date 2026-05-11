@@ -61,10 +61,12 @@ export default function EquipmentGrid() {
               key={i}
               className="group relative overflow-hidden rounded-lg aspect-[4/3] cursor-default"
             >
-              {/* Image */}
-              <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-105 bg-slate-800"
-                style={{ backgroundImage: `url('${item.img}')` }}
+              <img
+                src={item.img}
+                alt={item.name}
+                loading="lazy"
+                decoding="async"
+                className="absolute inset-0 h-full w-full object-cover object-center transition-transform duration-500 group-hover:scale-105 bg-slate-800"
               />
               {/* Gradient overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-[#1a1f2e]/95 via-[#1a1f2e]/30 to-transparent" />

@@ -3,7 +3,7 @@ const teamMembers = [
     name: "Bryan Carr",
     role: "National Sales Director - Crane & Heavy Transport",
     company: "Jeff Martin Auctioneers, Inc.",
-    image: "/bryan-carr.webp",
+    image: "/bryan-carr-team.jpg",
     bio: `Bryan Carr has been actively involved in the heavy lift industry since 1992, working alongside some of the most respected companies in the crane, rigging, and heavy transport sectors. Throughout his career, Bryan identified a significant market opportunity to better position and market underutilized equipment within the industry.
 
 As part of Jeff Martin Auctioneers, Inc., Bryan contributes to a team of dedicated professionals committed to delivering exceptional auction services. He specializes in evaluating equipment on-site and helping clients maximize value through strategic marketing and industry expertise. Known for his honesty, integrity, and professionalism, Bryan focuses on building lasting partnerships while consistently providing value-driven solutions for customers.`,
@@ -14,7 +14,7 @@ As part of Jeff Martin Auctioneers, Inc., Bryan contributes to a team of dedicat
     name: "Keith Willett",
     role: "Industry Sales & Management Specialist",
     company: "Jeff Martin Auctioneers, Inc.",
-    image: "/keith-willett.webp",
+    image: "/keith-willett.jpg",
     bio: `Keith Willett began his journey in the construction industry through summer jobs during his college years, developing a foundation that grew into a lifelong career spanning construction, construction equipment, and commercial trucking. Over the years, he has held a wide range of roles including inside sales, sales support, territory sales, general and regional management, and small business ownership.
 
 Keith believes that success in any role ultimately comes down to sales - building trust, solving problems, and creating meaningful connections. His professional philosophy centers on cultivating long-term relationships with customers, vendors, and teammates alike. By helping others grow and succeed, Keith has built a reputation for leadership, collaboration, and results-driven service.`,
@@ -25,7 +25,7 @@ Keith believes that success in any role ultimately comes down to sales - buildin
     name: "Chip Jordan",
     role: "Heavy Lift & Rigging Operations Specialist",
     company: "Jeff Martin Auctioneers, Inc.",
-    image: "/chip-jordan.webp",
+    image: "/chip-jordan.jpg",
     bio: `Chip Jordan brings nearly three decades of experience in the crane and rigging industry, including 18 years of hands-on field experience supporting heavy lift crane operations up to 825 tons. His expertise spans complex projects across stadium construction, marine operations, heavy transport, and specialized rigging solutions.
 
 As Assembly and Disassembly Director for crawler cranes ranging from 400 to 1,500 tons, he combines technical leadership with a team-first mindset and unwavering ethical standards. A veteran of the 223rd Combat Heavy Engineers, Chip brings disciplined problem-solving and unwavering commitment to every client relationship, ensuring projects are executed safely and efficiently.`,
@@ -58,6 +58,8 @@ export default function TeamSection() {
                 <img
                   src={member.image}
                   alt={member.name}
+                  loading="lazy"
+                  decoding="async"
                   className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-[#1a1f2e] via-[#1a1f2e]/90 to-transparent pt-16 pb-6 px-6">

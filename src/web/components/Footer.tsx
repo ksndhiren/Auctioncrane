@@ -7,7 +7,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 mb-10">
           {/* Brand */}
           <div className="lg:col-span-2">
-            <img src="/logo.png" alt="AuctionCrane" className="h-14 w-auto mb-4" />
+            <img src="/logo.svg" alt="AuctionCrane" className="h-14 w-auto mb-4" loading="lazy" decoding="async" />
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm mb-5">
               North America's specialist crane auction marketplace. Connecting crane owners and buyers through competitive, transparent auction events, powered by Jeff Martin Auctioneers Inc.
             </p>
@@ -86,6 +86,8 @@ export default function Footer() {
                 src="/jma-logo-new.png"
                 alt="Jeff Martin Auctioneers Inc"
                 className="h-10 w-auto brightness-0 invert"
+                loading="lazy"
+                decoding="async"
               />
               <span className="text-gray-400 text-xs font-semibold hidden sm:block">JeffMartinAuctioneers Inc</span>
             </a>

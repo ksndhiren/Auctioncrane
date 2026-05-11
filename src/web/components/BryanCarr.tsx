@@ -27,6 +27,8 @@ export default function BryanCarr() {
                 alt="Bryan Carr, National Sales Director, Crane & Heavy Transport"
                 className="w-full object-cover object-top"
                 style={{ maxHeight: "520px" }}
+                loading="lazy"
+                decoding="async"
               />
               {/* Gold overlay bar */}
               <div className="absolute bottom-0 left-0 right-0 bg-[#1a1f2e]/90 px-6 py-4">

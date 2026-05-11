@@ -2,9 +2,12 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/hero.png')" }}
+      <img
+        src="/hero.jpg"
+        alt=""
+        aria-hidden="true"
+        fetchPriority="high"
+        className="absolute inset-0 h-full w-full object-cover object-center"
       />
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#1a1f2e]/90 via-[#1a1f2e]/75 to-[#1a1f2e]/50" />
