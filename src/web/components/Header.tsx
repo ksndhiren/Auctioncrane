@@ -29,7 +29,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <a href="#" className="flex-shrink-0">
-            <img src="/logo.svg" alt="AuctionCrane" className="h-14 lg:h-16 w-auto" />
+            <img src="/logo.png" alt="AuctionCrane" className="h-14 lg:h-16 w-auto" />
           </a>
 
           {/* Desktop nav */}
