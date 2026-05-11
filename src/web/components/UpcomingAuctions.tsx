@@ -4,7 +4,7 @@ const events = [
     time: "10:00 AM CT",
     title: "Virtual Crane & Heavy Transport Auction",
     type: "Online / Virtual",
-    location: "Nationwide — Bid from Anywhere",
+    location: "Nationwide - Bid from Anywhere",
     description: "Featuring crawler cranes, all-terrain cranes, hydraulic truck cranes, carry decks, boom trucks, rough terrain cranes, and heavy transport equipment.",
     featured: true,
   },
@@ -23,7 +23,7 @@ const events = [
     title: "Monthly Virtual Crane Auctions",
     type: "Online",
     location: "Nationwide",
-    description: "Regular monthly virtual crane auction events — submit your crane or register as a buyer to receive notifications for upcoming events.",
+    description: "Regular monthly virtual crane auction events. Submit your crane or register as a buyer to receive notifications for upcoming events.",
     featured: false,
   },
 ];

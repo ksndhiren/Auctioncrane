@@ -17,8 +17,8 @@ const timeframes = [
 ];
 
 const budgetRanges = [
-  "Under $50,000", "$50,000 – $150,000", "$150,000 – $500,000",
-  "$500,000 – $1M", "$1M – $5M", "$5M+", "Flexible / TBD",
+  "Under $50,000", "$50,000 to $150,000", "$150,000 to $500,000",
+  "$500,000 to $1M", "$1M to $5M", "$5M+", "Flexible / TBD",
 ];
 
 function SuccessMessage({ type }: { type: "seller" | "buyer" | "contact" }) {

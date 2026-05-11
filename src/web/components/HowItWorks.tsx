@@ -2,7 +2,7 @@ const sellerSteps = [
   {
     num: "01",
     title: "Submit Your Crane",
-    body: "Fill in our seller form with your crane details — make, model, year, condition, and quantity. Our team reviews it within 24 hours.",
+    body: "Fill in our seller form with your crane details: make, model, year, condition, and quantity. Our team reviews it within 24 hours.",
     accent: "#c9a227",        // gold
     hoverBg: "hover:bg-[#c9a227]/10",
     hoverBorder: "hover:border-[#c9a227]",
@@ -22,7 +22,7 @@ const sellerSteps = [
   {
     num: "03",
     title: "We Handle Everything",
-    body: "From inspection and photography to marketing and bidder outreach — we manage the entire process. You simply collect your proceeds after the sale.",
+    body: "From inspection and photography to marketing and bidder outreach, we manage the entire process. You simply collect your proceeds after the sale.",
     accent: "#4caf82",        // green
     hoverBg: "hover:bg-[#4caf82]/10",
     hoverBorder: "hover:border-[#4caf82]",
@@ -105,7 +105,7 @@ export default function HowItWorks() {
             How It Works
           </h2>
           <p className="mt-5 text-lg text-gray-400 max-w-xl mx-auto" style={{ fontFamily: "'Manrope', sans-serif" }}>
-            Whether you're selling one crane or an entire fleet, or looking to buy at the best price — here's how to get started.
+            Whether you're selling one crane or an entire fleet, or looking to buy at the best price, here's how to get started.
           </p>
         </div>
 

@@ -1,6 +1,6 @@
 const testimonials = [
   {
-    quote: "Bryan and his team handled the sale of our entire 14-crane fleet flawlessly. The auction exceeded our reserve prices across the board — we recovered significantly more capital than we anticipated from a private sale. The process was transparent, professional, and quick.",
+    quote: "Bryan and his team handled the sale of our entire 14-crane fleet flawlessly. The auction exceeded our reserve prices across the board, and we recovered significantly more capital than we anticipated from a private sale. The process was transparent, professional, and quick.",
     name: "Marcus D.",
     title: "VP of Fleet Operations",
     company: "Mid-Continent Construction Group",
@@ -8,7 +8,7 @@ const testimonials = [
     initials: "MD",
   },
   {
-    quote: "As a buyer, AuctionCrane is exactly what I needed. Bryan took the time to understand what we were looking for — a 200-ton all-terrain — and pointed us to the right auction. We won the unit at well below new replacement cost. Easy process, honest people.",
+    quote: "As a buyer, AuctionCrane is exactly what I needed. Bryan took the time to understand what we were looking for, a 200-ton all-terrain, and pointed us to the right auction. We won the unit at well below new replacement cost. Easy process, honest people.",
     name: "Steve R.",
     title: "Equipment Director",
     company: "Riverside Industrial Services",
@@ -42,7 +42,7 @@ export default function Testimonials() {
             Trusted by Crane Owners &<br className="hidden sm:block" /> Equipment Buyers
           </h2>
           <p className="mt-4 text-gray-400 text-sm italic">
-            * Placeholder testimonials — real client quotes coming soon
+            * Placeholder testimonials; real client quotes coming soon
           </p>
         </div>
 

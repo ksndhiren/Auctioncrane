@@ -1,7 +1,7 @@
 const credentials = [
   "30+ years in the Heavy Lift Industry (since 1992)",
-  "National Sales Director — Crane & Heavy Transport, Jeff Martin Auctioneers",
-  "Partner with The Manitowoc Company — world-leading crane manufacturer",
+  "National Sales Director, Crane & Heavy Transport, Jeff Martin Auctioneers",
+  "Partner with The Manitowoc Company, a world-leading crane manufacturer",
   "Active member, Specialized Carriers & Rigging Association (SC&RA)",
   "Specialist in: rental, sales, bridge construction, marine, steel erection, wind energy",
   "Handles consignments from single units to full fleet liquidations",
@@ -24,14 +24,14 @@ export default function BryanCarr() {
             <div className="relative overflow-hidden rounded-xl shadow-2xl">
               <img
                 src="/bryan-carr.jpg"
-                alt="Bryan Carr — National Sales Director, Crane & Heavy Transport"
+                alt="Bryan Carr, National Sales Director, Crane & Heavy Transport"
                 className="w-full object-cover object-top"
                 style={{ maxHeight: "520px" }}
               />
               {/* Gold overlay bar */}
               <div className="absolute bottom-0 left-0 right-0 bg-[#1a1f2e]/90 px-6 py-4">
                 <div className="text-white font-black text-lg">Bryan Carr</div>
-                <div className="text-[#c9a227] text-sm font-semibold">National Sales Director — Crane & Heavy Transport</div>
+                <div className="text-[#c9a227] text-sm font-semibold">National Sales Director, Crane & Heavy Transport</div>
                 <div className="text-gray-400 text-xs mt-0.5">Jeff Martin Auctioneers, Inc.</div>
               </div>
             </div>
@@ -43,14 +43,14 @@ export default function BryanCarr() {
           {/* Content side */}
           <div>
             <blockquote className="text-xl lg:text-2xl font-medium text-[#1a1f2e] leading-relaxed mb-8 border-l-4 border-[#c9a227] pl-6">
-              "If you are considering selling any piece of equipment, we will stand beside you each step of the way — with honesty and integrity."
+              "If you are considering selling any piece of equipment, we will stand beside you each step of the way, with honesty and integrity."
             </blockquote>
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              Bryan Carr has spent over three decades embedded in the heavy lift industry — from crane rental and sales to major construction disciplines across North America. As AuctionCrane's dedicated specialist, Bryan brings unmatched technical knowledge and a trusted network of crane owners, dealers, and buyers.
+              Bryan Carr has spent over three decades embedded in the heavy lift industry, from crane rental and sales to major construction disciplines across North America. As AuctionCrane's dedicated specialist, Bryan brings unmatched technical knowledge and a trusted network of crane owners, dealers, and buyers.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
-              Whether you're a construction company looking to liquidate a fleet, an equipment dealer with surplus inventory, or a buyer searching for a specific crane type, Bryan personally manages every relationship. You won't deal with a call centre — you'll work directly with one of North America's foremost crane specialists.
+              Whether you're a construction company looking to liquidate a fleet, an equipment dealer with surplus inventory, or a buyer searching for a specific crane type, Bryan personally manages every relationship. You won't deal with a call centre; you'll work directly with one of North America's foremost crane specialists.
             </p>
 
             <div className="mb-8">
@@ -83,16 +83,16 @@ export default function BryanCarr() {
               </a>
               <a
                 href="mailto:bryan.c@jeffmartinauctioneers.com"
-                className="flex items-center gap-3 px-5 py-4 bg-[#c9a227] rounded-lg hover:bg-[#b8911f] transition-colors"
+                className="flex items-center gap-3 px-5 py-4 bg-[#c9a227] rounded-lg hover:bg-[#b8911f] transition-colors sm:flex-1"
               >
                 <div className="w-10 h-10 rounded-full bg-[#1a1f2e]/20 flex items-center justify-center flex-shrink-0">
                   <svg className="w-4 h-4 text-[#1a1f2e]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <div>
+                <div className="min-w-0">
                   <div className="text-[#1a1f2e]/70 text-xs font-medium">Email Bryan</div>
-                  <div className="text-[#1a1f2e] font-bold text-sm">bryan.c@jeffmartinauctioneers.com</div>
+                  <div className="text-[#1a1f2e] font-bold text-sm whitespace-nowrap">bryan.c@jeffmartinauctioneers.com</div>
                 </div>
               </a>
             </div>

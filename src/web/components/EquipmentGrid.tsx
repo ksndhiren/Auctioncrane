@@ -11,7 +11,7 @@ const equipment = [
   },
   {
     name: "Hydraulic Truck Cranes",
-    desc: "Mobile hydraulic cranes mounted on truck carriers — ideal for fast deployment.",
+    desc: "Mobile hydraulic cranes mounted on truck carriers, ideal for fast deployment.",
     img: "/crane-hydraulic.jpg",
   },
   {
@@ -26,7 +26,7 @@ const equipment = [
   },
   {
     name: "Boom Trucks",
-    desc: "Truck-mounted hydraulic boom cranes — versatile workhorses for utilities and construction.",
+    desc: "Truck-mounted hydraulic boom cranes, versatile workhorses for utilities and construction.",
     img: "/crane-boom.jpg",
   },
   {
@@ -51,7 +51,7 @@ export default function EquipmentGrid() {
             Crane Types We Specialise In
           </h2>
           <p className="mt-5 text-lg text-gray-500 max-w-2xl mx-auto">
-            From single carry decks to entire fleet liquidations — if it lifts, we auction it. Our specialist knowledge spans every category of crane equipment.
+            From single carry decks to entire fleet liquidations, if it lifts, we auction it. Our specialist knowledge spans every category of crane equipment.
           </p>
         </div>
 
@@ -85,7 +85,7 @@ export default function EquipmentGrid() {
           <p className="text-gray-500 text-sm">
             Have something not listed?{" "}
             <a href="#lead-forms" className="text-[#c9a227] font-semibold hover:underline">
-              Contact us — we handle all heavy lifting equipment.
+              Contact us. We handle all heavy lifting equipment.
             </a>
           </p>
         </div>

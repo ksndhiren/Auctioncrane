@@ -7,7 +7,7 @@ const reasons = [
       </svg>
     ),
     title: "North America-Wide Reach",
-    body: "Permanent auction facilities in Mississippi, Texas, Florida, and South Carolina — with live and virtual bidding drawing buyers from across the continent and beyond.",
+    body: "Permanent auction facilities in Mississippi, Texas, Florida, and South Carolina, with live and virtual bidding drawing buyers from across the continent and beyond.",
   },
   {
     icon: (
@@ -16,7 +16,7 @@ const reasons = [
       </svg>
     ),
     title: "Specialist Expertise",
-    body: "Our crane division is led by Bryan Carr — 30+ years in the heavy lift industry. We understand crane values, specifications, and what buyers are looking for. This isn't general equipment — this is specialist knowledge.",
+    body: "Our crane division is led by Bryan Carr, with 30+ years in the heavy lift industry. We understand crane values, specifications, and what buyers are looking for. This isn't general equipment; this is specialist knowledge.",
   },
   {
     icon: (
@@ -25,7 +25,7 @@ const reasons = [
       </svg>
     ),
     title: "Maximum Asset Value",
-    body: "Competitive bidding drives prices up. Our global buyer network, targeted marketing, and professional presentation ensure your crane achieves its true market value — often exceeding private sale expectations.",
+    body: "Competitive bidding drives prices up. Our global buyer network, targeted marketing, and professional presentation ensure your crane achieves its true market value, often exceeding private sale expectations.",
   },
   {
     icon: (
@@ -43,7 +43,7 @@ const reasons = [
       </svg>
     ),
     title: "Global Buyer Network",
-    body: "Thousands of registered bidders across construction, energy, marine, and industrial sectors attend each crane auction — live and online. Your equipment is seen by the right people.",
+    body: "Thousands of registered bidders across construction, energy, marine, and industrial sectors attend each crane auction, live and online. Your equipment is seen by the right people.",
   },
   {
     icon: (
@@ -52,7 +52,7 @@ const reasons = [
       </svg>
     ),
     title: "Fast Capital Recovery",
-    body: "Auctions compress timelines dramatically versus private sales. Turn idle or underutilised cranes into capital quickly — critical for fleet managers, project wind-downs, and estate liquidations.",
+    body: "Auctions compress timelines dramatically versus private sales. Turn idle or underutilised cranes into capital quickly, which is critical for fleet managers, project wind-downs, and estate liquidations.",
   },
 ];
 
@@ -66,7 +66,7 @@ export default function WhyUs() {
             The Trusted Specialist for<br className="hidden sm:block" /> Crane Auctions
           </h2>
           <p className="mt-5 text-lg text-gray-500 max-w-2xl mx-auto">
-            We're not a general equipment auction house. We're a dedicated crane marketplace — built on deep industry knowledge and a track record of results.
+            We're not a general equipment auction house. We're a dedicated crane marketplace, built on deep industry knowledge and a track record of results.
           </p>
         </div>
 

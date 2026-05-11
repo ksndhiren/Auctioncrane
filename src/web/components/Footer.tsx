@@ -9,13 +9,13 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <img src="/logo.png" alt="AuctionCrane" className="h-14 w-auto mb-4" />
             <p className="text-gray-400 text-sm leading-relaxed max-w-sm mb-5">
-              North America's specialist crane auction marketplace. Connecting crane owners and buyers through competitive, transparent auction events — powered by Jeff Martin Auctioneers Inc.
+              North America's specialist crane auction marketplace. Connecting crane owners and buyers through competitive, transparent auction events, powered by Jeff Martin Auctioneers Inc.
             </p>
             <div className="flex items-center gap-2 text-gray-500 text-xs">
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
               </svg>
-              MS · TX · FL · SC — Serving North America
+              MS · TX · FL · SC | Serving North America
             </div>
           </div>
 

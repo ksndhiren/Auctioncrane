@@ -26,7 +26,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-lg sm:text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
-            AuctionCrane connects crane owners and buyers across North America through specialist competitive auctions — maximising asset value and sourcing quality equipment for serious buyers.
+            AuctionCrane connects crane owners and buyers across North America through specialist competitive auctions, maximising asset value and sourcing quality equipment for serious buyers.
           </p>
 
           {/* Dual CTAs */}

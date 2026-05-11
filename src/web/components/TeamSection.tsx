@@ -50,7 +50,10 @@ export default function TeamSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member, index) => (
-            <div key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 group">
+            <div
+              key={index}
+              className="flex h-full flex-col bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 group"
+            >
               <div className="relative h-80 overflow-hidden">
                 <img
                   src={member.image}
@@ -64,8 +67,8 @@ export default function TeamSection() {
                 </div>
               </div>
 
-              <div className="p-6">
-                <div className="text-gray-600 text-sm leading-relaxed space-y-4 mb-6">
+              <div className="flex flex-1 flex-col p-6">
+                <div className="mb-6 flex-1 text-gray-600 text-sm leading-relaxed space-y-4">
                   {member.bio.split('\n\n').map((paragraph, i) => (
                     <p key={i}>{paragraph}</p>
                   ))}

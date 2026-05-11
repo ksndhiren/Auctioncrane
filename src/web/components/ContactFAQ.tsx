@@ -7,7 +7,7 @@ const faqs = [
   },
   {
     q: "What types of cranes do you accept?",
-    a: "We accept all types of mobile and lifting equipment — all-terrain cranes, crawler cranes, hydraulic truck cranes, rough terrain cranes, carry decks, boom trucks, telescopic crawlers, tower cranes, and ancillary lifting equipment. If it lifts, we can auction it.",
+    a: "We accept all types of mobile and lifting equipment: all-terrain cranes, crawler cranes, hydraulic truck cranes, rough terrain cranes, carry decks, boom trucks, telescopic crawlers, tower cranes, and ancillary lifting equipment. If it lifts, we can auction it.",
   },
   {
     q: "How does the auction process work for sellers?",
@@ -153,9 +153,9 @@ export default function ContactFAQ() {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                   </svg>
                 </div>
-                <div>
+                <div className="min-w-0">
                   <div className="text-xs text-gray-400 font-semibold uppercase tracking-wide">Email</div>
-                  <a href="mailto:bryan.c@jeffmartinauctioneers.com" className="text-[#1a1f2e] font-bold text-sm hover:text-[#c9a227] break-all">bryan.c@jeffmartinauctioneers.com</a>
+                  <a href="mailto:bryan.c@jeffmartinauctioneers.com" className="text-[#1a1f2e] font-bold text-sm hover:text-[#c9a227] whitespace-nowrap">bryan.c@jeffmartinauctioneers.com</a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
