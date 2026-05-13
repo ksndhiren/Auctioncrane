@@ -49,7 +49,7 @@ function SuccessMessage({ type }: { type: "seller" | "buyer" }) {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center py-16 text-center">
+    <div className="flex flex-col items-center justify-center py-10 text-center">
       <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-full bg-[#c9a227]/20">
         <svg className="h-8 w-8 text-[#c9a227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -107,10 +107,10 @@ function SellerForm() {
   }
 
   return (
-    <form onSubmit={submit} className="space-y-5">
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <form onSubmit={submit} className="space-y-3">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         <div>
-          <Label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-gray-300">
+          <Label className="mb-1 block text-xs font-semibold uppercase text-gray-300">
             First Name *
           </Label>
           <Input
@@ -118,22 +118,22 @@ function SellerForm() {
             value={form.fullName}
             onChange={set("fullName")}
             placeholder="John"
-            className="border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227] focus:ring-[#c9a227]"
+            className="h-9 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227] focus:ring-[#c9a227]"
           />
         </div>
         <div>
-          <Label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-gray-300">
+          <Label className="mb-1 block text-xs font-semibold uppercase text-gray-300">
             Last Name / Company
           </Label>
           <Input
             value={form.company}
             onChange={set("company")}
             placeholder="Smith Crane Co."
-            className="border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
+            className="h-9 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
           />
         </div>
         <div>
-          <Label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-gray-300">
+          <Label className="mb-1 block text-xs font-semibold uppercase text-gray-300">
             Email *
           </Label>
           <Input
@@ -142,11 +142,11 @@ function SellerForm() {
             value={form.email}
             onChange={set("email")}
             placeholder="you@example.com"
-            className="border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
+            className="h-9 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
           />
         </div>
         <div>
-          <Label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-gray-300">
+          <Label className="mb-1 block text-xs font-semibold uppercase text-gray-300">
             Phone
           </Label>
           <Input
@@ -154,18 +154,18 @@ function SellerForm() {
             value={form.phone}
             onChange={set("phone")}
             placeholder="Your phone"
-            className="border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
+            className="h-9 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
           />
         </div>
         <div>
-          <Label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-gray-300">
+          <Label className="mb-1 block text-xs font-semibold uppercase text-gray-300">
             Equipment Type *
           </Label>
           <select
             required
             value={form.craneType}
             onChange={set("craneType")}
-            className="h-10 w-full rounded-md border border-white/20 bg-white/10 px-3 text-sm text-white focus:border-[#c9a227] focus:outline-none focus:ring-1 focus:ring-[#c9a227]"
+            className="h-9 w-full rounded-md border border-white/20 bg-white/10 px-3 text-sm text-white focus:border-[#c9a227] focus:outline-none focus:ring-1 focus:ring-[#c9a227]"
           >
             <option value="" className="bg-[#101827]">
               Select Equipment Type
@@ -178,13 +178,13 @@ function SellerForm() {
           </select>
         </div>
         <div>
-          <Label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-gray-300">
+          <Label className="mb-1 block text-xs font-semibold uppercase text-gray-300">
             Preferred Contact Method
           </Label>
           <select
             value={form.preferredTimeframe}
             onChange={set("preferredTimeframe")}
-            className="h-10 w-full rounded-md border border-white/20 bg-white/10 px-3 text-sm text-white focus:border-[#c9a227] focus:outline-none focus:ring-1 focus:ring-[#c9a227]"
+            className="h-9 w-full rounded-md border border-white/20 bg-white/10 px-3 text-sm text-white focus:border-[#c9a227] focus:outline-none focus:ring-1 focus:ring-[#c9a227]"
           >
             <option value="" className="bg-[#101827]">
               Select Preferred Method
@@ -199,14 +199,14 @@ function SellerForm() {
       </div>
 
       <div>
-        <Label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-gray-300">
+        <Label className="mb-1 block text-xs font-semibold uppercase text-gray-300">
           Message
         </Label>
         <Textarea
           value={form.message}
           onChange={set("message")}
           placeholder="Tell us about your equipment, timing, and goals..."
-          className="min-h-[110px] resize-none border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
+          className="min-h-[72px] resize-none border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
         />
       </div>
 
@@ -219,7 +219,7 @@ function SellerForm() {
       <button
         type="submit"
         disabled={state === "submitting"}
-        className="w-full rounded bg-[#c9a227] py-4 text-sm font-black uppercase text-[#101827] transition hover:bg-[#b8911f] disabled:opacity-60"
+        className="w-full rounded bg-[#c9a227] py-3 text-sm font-black uppercase text-[#101827] transition hover:bg-[#b8911f] disabled:opacity-60"
       >
         {state === "submitting" ? "Submitting..." : "Get In Touch"}
       </button>
@@ -249,15 +249,6 @@ function BuyerForm() {
     ) =>
       setForm((current) => ({ ...current, [key]: event.target.value }));
 
-  const toggleEquipment = (value: string) => {
-    setForm((current) => ({
-      ...current,
-      equipmentInterest: current.equipmentInterest.includes(value)
-        ? current.equipmentInterest.filter((item) => item !== value)
-        : [...current.equipmentInterest, value],
-    }));
-  };
-
   const submit = async (event: React.FormEvent) => {
     event.preventDefault();
     setState("submitting");
@@ -282,10 +273,10 @@ function BuyerForm() {
   }
 
   return (
-    <form onSubmit={submit} className="space-y-5">
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+    <form onSubmit={submit} className="space-y-3">
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         <div>
-          <Label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-gray-300">
+          <Label className="mb-1 block text-xs font-semibold uppercase text-gray-300">
             First Name *
           </Label>
           <Input
@@ -293,22 +284,22 @@ function BuyerForm() {
             value={form.fullName}
             onChange={set("fullName")}
             placeholder="Jane"
-            className="border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
+            className="h-9 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
           />
         </div>
         <div>
-          <Label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-gray-300">
+          <Label className="mb-1 block text-xs font-semibold uppercase text-gray-300">
             Last Name / Company
           </Label>
           <Input
             value={form.company}
             onChange={set("company")}
             placeholder="Your company"
-            className="border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
+            className="h-9 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
           />
         </div>
         <div>
-          <Label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-gray-300">
+          <Label className="mb-1 block text-xs font-semibold uppercase text-gray-300">
             Email *
           </Label>
           <Input
@@ -317,11 +308,11 @@ function BuyerForm() {
             value={form.email}
             onChange={set("email")}
             placeholder="you@example.com"
-            className="border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
+            className="h-9 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
           />
         </div>
         <div>
-          <Label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-gray-300">
+          <Label className="mb-1 block text-xs font-semibold uppercase text-gray-300">
             Your Role
           </Label>
           <Input
@@ -329,79 +320,66 @@ function BuyerForm() {
             value={form.phone}
             onChange={set("phone")}
             placeholder="Fleet buyer, contractor, dealer..."
-            className="border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
+            className="h-9 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
           />
         </div>
       </div>
 
-      <div>
-        <Label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-gray-300">
-          Preferred Location
-        </Label>
-        <select
-          value={form.budgetRange}
-          onChange={set("budgetRange")}
-          className="h-10 w-full rounded-md border border-white/20 bg-white/10 px-3 text-sm text-white focus:border-[#c9a227] focus:outline-none focus:ring-1 focus:ring-[#c9a227]"
-        >
-          <option value="" className="bg-[#101827]">
-            Select Location
-          </option>
-          {budgetRanges.map((range) => (
-            <option key={range} value={range} className="bg-[#101827]">
-              {range}
+      <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+        <div>
+          <Label className="mb-1 block text-xs font-semibold uppercase text-gray-300">
+            Preferred Location
+          </Label>
+          <select
+            value={form.budgetRange}
+            onChange={set("budgetRange")}
+            className="h-9 w-full rounded-md border border-white/20 bg-white/10 px-3 text-sm text-white focus:border-[#c9a227] focus:outline-none focus:ring-1 focus:ring-[#c9a227]"
+          >
+            <option value="" className="bg-[#101827]">
+              Select Location
             </option>
-          ))}
-        </select>
-      </div>
-
-      <div>
-        <Label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-gray-300">
-          Equipment Interests
-        </Label>
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
-          {craneTypes.map((type) => (
-            <label
-              key={type}
-              className={`flex cursor-pointer items-center gap-2 rounded border p-2.5 text-xs font-medium transition-all ${
-                form.equipmentInterest.includes(type)
-                  ? "border-[#c9a227] bg-[#c9a227]/10 text-[#c9a227]"
-                  : "border-white/15 text-gray-400 hover:border-white/30"
-              }`}
-            >
-              <input
-                type="checkbox"
-                className="sr-only"
-                checked={form.equipmentInterest.includes(type)}
-                onChange={() => toggleEquipment(type)}
-              />
-              <span
-                className={`flex h-3 w-3 flex-shrink-0 items-center justify-center rounded-sm border ${
-                  form.equipmentInterest.includes(type)
-                    ? "border-[#c9a227] bg-[#c9a227]"
-                    : "border-gray-500"
-                }`}
-              >
-                {form.equipmentInterest.includes(type) ? (
-                  <svg className="h-2 w-2 text-[#101827]" fill="currentColor" viewBox="0 0 12 12">
-                    <path d="M10 3L5 8.5 2 5.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none" />
-                  </svg>
-                ) : null}
-              </span>
-              {type}
-            </label>
-          ))}
+            {budgetRanges.map((range) => (
+              <option key={range} value={range} className="bg-[#101827]">
+                {range}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div>
+          <Label className="mb-1 block text-xs font-semibold uppercase text-gray-300">
+            Equipment Interest
+          </Label>
+          <select
+            value={form.equipmentInterest[0] ?? ""}
+            onChange={(event) =>
+              setForm((current) => ({
+                ...current,
+                equipmentInterest: event.target.value ? [event.target.value] : [],
+              }))
+            }
+            className="h-9 w-full rounded-md border border-white/20 bg-white/10 px-3 text-sm text-white focus:border-[#c9a227] focus:outline-none focus:ring-1 focus:ring-[#c9a227]"
+          >
+            <option value="" className="bg-[#101827]">
+              Select Equipment
+            </option>
+            {craneTypes.map((type) => (
+              <option key={type} value={type} className="bg-[#101827]">
+                {type}
+              </option>
+            ))}
+          </select>
         </div>
       </div>
 
       <div>
-        <Label className="mb-1.5 block text-xs font-semibold uppercase tracking-wide text-gray-300">
+        <Label className="mb-1 block text-xs font-semibold uppercase text-gray-300">
           Message
         </Label>
         <Textarea
           value={form.message}
           onChange={set("message")}
           placeholder="Tell us what equipment you need and how we can help..."
-          className="min-h-[110px] resize-none border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
+          className="min-h-[72px] resize-none border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
         />
       </div>
 
@@ -414,7 +392,7 @@ function BuyerForm() {
       <button
         type="submit"
         disabled={state === "submitting"}
-        className="w-full rounded bg-[#c9a227] py-4 text-sm font-black uppercase text-[#101827] transition hover:bg-[#b8911f] disabled:opacity-60"
+        className="w-full rounded bg-[#c9a227] py-3 text-sm font-black uppercase text-[#101827] transition hover:bg-[#b8911f] disabled:opacity-60"
       >
         {state === "submitting" ? "Submitting..." : "Get In Touch"}
       </button>
@@ -497,26 +475,12 @@ export default function LeadForms() {
             </div>
           </div>
 
-          <div className="rounded-lg bg-[linear-gradient(180deg,#101827_0%,#172234_100%)] p-6 text-white shadow-[0_22px_60px_rgba(15,23,37,0.2)] lg:p-8">
-            <div className="mb-8">
-              <span className="text-sm font-bold uppercase text-[#c9a227]">
-                Lead Form
-              </span>
-              <h2 className="mt-3 text-3xl font-black leading-tight text-white sm:text-4xl">
-                Connect With Our Team
-              </h2>
-              <p className="mt-4 max-w-xl text-slate-300">
-                Submit your details below and our crane marketplace specialists
-                will follow up with the right inventory, auction, or listing
-                path.
-              </p>
-            </div>
-
-            <div className="mx-auto mb-8 flex max-w-sm rounded-md border border-white/15 p-1">
+          <div className="rounded-lg bg-[linear-gradient(180deg,#101827_0%,#172234_100%)] p-5 text-white shadow-[0_22px_60px_rgba(15,23,37,0.2)] lg:p-6">
+            <div className="mx-auto mb-5 flex max-w-sm rounded-md border border-white/15 p-1">
               <button
                 data-tab="buyer"
                 onClick={() => setActive("buyer")}
-                className={`flex-1 rounded py-3 text-sm font-black uppercase transition-colors ${
+                className={`flex-1 rounded py-2.5 text-sm font-black uppercase transition-colors ${
                   active === "buyer"
                     ? "bg-white text-[#101827]"
                     : "text-slate-300 hover:text-white"
@@ -527,7 +491,7 @@ export default function LeadForms() {
               <button
                 data-tab="seller"
                 onClick={() => setActive("seller")}
-                className={`flex-1 rounded py-3 text-sm font-black uppercase transition-colors ${
+                className={`flex-1 rounded py-2.5 text-sm font-black uppercase transition-colors ${
                   active === "seller"
                     ? "bg-[#c9a227] text-[#101827]"
                     : "text-slate-300 hover:text-white"

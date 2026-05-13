@@ -3,7 +3,7 @@ const teamMembers = [
     name: "Bryan Carr",
     role: "National Sales Director - Crane & Heavy Transport",
     image: "/bryan-carr-team.jpg",
-    bio: "Bryan Carr has been actively involved in the heavy lift industry since 1992, helping sellers position underutilized equipment and supporting buyers with trusted inventory guidance through Jeff Martin Auctioneers.",
+    bio: "Bryan Carr has been active in the heavy lift industry since 1992, helping sellers position underutilized equipment and guiding buyers toward trusted inventory opportunities.",
     phone: "+16015086207",
     email: "bryan.c@jeffmartinauctioneers.com",
   },
@@ -11,7 +11,7 @@ const teamMembers = [
     name: "Keith Willett",
     role: "Industry Sales & Management Specialist",
     image: "/keith-willett.jpg",
-    bio: "Keith Willett brings decades of experience across construction equipment, trucking, sales leadership, and relationship-driven account support for commercial equipment clients.",
+    bio: "Keith Willett brings decades of experience across construction equipment, trucking, sales leadership, and commercial account support.",
     phone: "+16014506200",
     email: "keith.w@jeffmartinauctioneers.com",
   },
@@ -19,7 +19,7 @@ const teamMembers = [
     name: "Chip Jordan",
     role: "Heavy Lift & Rigging Operations Specialist",
     image: "/chip-jordan.jpg",
-    bio: "Chip Jordan adds deep crane, rigging, and field operations expertise, helping clients navigate heavy lift projects, fleet opportunities, and technical equipment considerations.",
+    bio: "Chip Jordan adds deep crane, rigging, and field operations expertise for heavy lift projects, fleet opportunities, and technical equipment needs.",
     phone: "+16625495614",
     email: "chip.j@jeffmartinauctioneers.com",
   },
@@ -27,9 +27,9 @@ const teamMembers = [
 
 export default function TeamSection() {
   return (
-    <section id="team" className="bg-white pt-16 lg:pt-20">
+    <section id="team" className="bg-white pt-12 lg:pt-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="border-b border-slate-200 pb-14">
+        <div className="border-b border-slate-200 pb-12">
           <div>
             <span className="text-sm font-bold uppercase text-[#c9a227]">
               Meet Our Team
@@ -37,18 +37,18 @@ export default function TeamSection() {
             <h2 className="mt-4 text-3xl font-black tracking-tight text-[#0f1725] sm:text-4xl">
               Marketplace & Auction Specialists
             </h2>
-            <p className="mt-4 max-w-2xl text-base leading-7 text-slate-600">
+            <p className="mt-3 max-w-2xl text-base leading-7 text-slate-600">
               Our experienced team is here to help you buy equipment, sell
               inventory, and succeed in today&apos;s equipment market.
             </p>
 
-            <div className="mt-8 grid gap-6 md:grid-cols-3">
+            <div className="mt-5 grid gap-4 md:grid-cols-3">
               {teamMembers.map((member) => (
                 <div
                   key={member.name}
                   className="flex h-full flex-col overflow-hidden rounded-lg border border-slate-200 bg-white shadow-[0_14px_34px_rgba(15,23,37,0.08)]"
                 >
-                  <div className="relative h-64 overflow-hidden">
+                  <div className="relative h-60 overflow-hidden bg-slate-100">
                     <img
                       src={member.image}
                       alt={member.name}
@@ -56,24 +56,24 @@ export default function TeamSection() {
                       decoding="async"
                       className="h-full w-full object-cover object-top"
                     />
-                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#101827] via-[#101827]/85 to-transparent px-5 pb-5 pt-14">
-                      <div className="text-xl font-black text-white">
+                  </div>
+
+                  <div className="flex flex-1 flex-col p-4">
+                    <div>
+                      <div className="text-lg font-black text-[#0f1725]">
                         {member.name}
                       </div>
-                      <div className="mt-1 text-sm font-semibold text-[#c9a227]">
+                      <div className="mt-1 min-h-9 text-sm font-semibold leading-5 text-[#9f7c18]">
                         {member.role}
                       </div>
                     </div>
-                  </div>
-
-                  <div className="flex flex-1 flex-col p-5">
-                    <div className="flex-1 text-sm leading-6 text-slate-600">
+                    <div className="mt-3 flex-1 text-sm leading-6 text-slate-600">
                       <p>{member.bio}</p>
                     </div>
-                    <div className="mt-5 space-y-3 border-t border-slate-100 pt-4">
+                    <div className="mt-3 space-y-2 border-t border-slate-100 pt-3">
                       <a
                         href={`tel:${member.phone}`}
-                        className="flex items-center gap-3 rounded bg-[#101827] px-4 py-3 transition hover:bg-[#172131]"
+                        className="flex items-center gap-3 rounded bg-[#101827] px-3 py-2.5 transition hover:bg-[#172131]"
                       >
                         <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#c9a227] text-[#101827]">
                           <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -93,7 +93,7 @@ export default function TeamSection() {
                       </a>
                       <a
                         href={`mailto:${member.email}`}
-                        className="flex items-center gap-3 rounded bg-[#f7f4e7] px-4 py-3 transition hover:bg-[#f0e6bd]"
+                        className="flex items-center gap-3 rounded bg-[#f7f4e7] px-3 py-2.5 transition hover:bg-[#f0e6bd]"
                       >
                         <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#101827] text-[#c9a227]">
                           <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">

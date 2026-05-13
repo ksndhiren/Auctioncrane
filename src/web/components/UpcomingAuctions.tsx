@@ -68,7 +68,7 @@ export default function UpcomingAuctions() {
           {events.map((event) => (
             <div
               key={event.title}
-              className={`overflow-hidden rounded-lg border shadow-[0_14px_34px_rgba(15,23,37,0.08)] ${
+              className={`flex h-full flex-col overflow-hidden rounded-lg border shadow-[0_14px_34px_rgba(15,23,37,0.08)] ${
                 event.featured
                   ? "border-[#c9a227]/60 bg-[#101827]"
                   : "border-slate-200 bg-white"
@@ -95,12 +95,12 @@ export default function UpcomingAuctions() {
                 </div>
               </div>
 
-              <div className="p-6">
+              <div className="flex flex-1 flex-col p-6">
                 <div className="mb-2 text-xs font-bold uppercase text-[#c9a227]">
                   {event.type}
                 </div>
                 <div
-                  className={`text-xl font-black leading-snug ${
+                  className={`min-h-[84px] text-xl font-black leading-snug ${
                     event.featured ? "text-white" : "text-[#0f1725]"
                   }`}
                 >
@@ -129,7 +129,7 @@ export default function UpcomingAuctions() {
                   {event.location}
                 </div>
                 <p
-                  className={`mt-4 text-sm leading-6 ${
+                  className={`mt-4 min-h-[96px] text-sm leading-6 ${
                     event.featured ? "text-slate-300" : "text-slate-600"
                   }`}
                 >
@@ -153,7 +153,7 @@ export default function UpcomingAuctions() {
             </div>
           ))}
 
-          <div className="rounded-lg bg-[linear-gradient(180deg,#101827_0%,#172234_100%)] p-8 text-white shadow-[0_14px_34px_rgba(15,23,37,0.16)]">
+          <div className="flex h-full flex-col rounded-lg bg-[linear-gradient(180deg,#101827_0%,#172234_100%)] p-8 text-white shadow-[0_14px_34px_rgba(15,23,37,0.16)]">
             <p className="text-sm font-bold uppercase text-[#c9a227]">
               Also Explore
             </p>
@@ -166,7 +166,7 @@ export default function UpcomingAuctions() {
             </p>
             <a
               href="#equipment"
-              className="mt-8 inline-flex rounded bg-[#c9a227] px-5 py-3 text-sm font-black uppercase text-[#101827] transition hover:bg-[#b8911f]"
+              className="mt-auto inline-flex rounded bg-[#c9a227] px-5 py-3 text-sm font-black uppercase text-[#101827] transition hover:bg-[#b8911f]"
             >
               Browse Marketplace
             </a>
