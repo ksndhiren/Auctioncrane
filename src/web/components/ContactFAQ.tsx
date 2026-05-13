@@ -3,7 +3,7 @@ import { useState } from "react";
 const faqs = [
   {
     q: "How does the crane marketplace work?",
-    a: "Auction Crane connects buyers and sellers through direct inventory listings and crane auctions.",
+    a: "Jeff Martin Auctioneers connects buyers and sellers through direct inventory listings and crane auctions.",
   },
   {
     q: "Can I buy cranes directly from sellers?",

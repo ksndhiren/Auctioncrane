@@ -28,8 +28,18 @@ export default function Header() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between lg:h-[72px]">
-          <a href="#" className="flex-shrink-0">
+          <a href="#" className="flex min-w-0 flex-shrink-0 items-center gap-2.5 lg:gap-3">
             <img src="/logo.png" alt="AuctionCrane" className="h-10 w-auto lg:h-12" />
+            <span className="flex min-w-0 items-center gap-1.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-white/70 lg:gap-2 lg:text-[10px]">
+              <span className="whitespace-nowrap">Powered by</span>
+              <img
+                src="/jma-logo-new.png"
+                alt="Jeff Martin Auctioneers Inc"
+                className="h-4 w-auto brightness-0 invert lg:h-5"
+                loading="lazy"
+                decoding="async"
+              />
+            </span>
           </a>
 
           <nav className="hidden items-center gap-4 xl:flex">
