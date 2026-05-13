@@ -1,86 +1,78 @@
 const reasons = [
   {
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-      </svg>
-    ),
-    title: "North America-Wide Reach",
-    body: "Permanent auction facilities in Mississippi, Texas, Florida, and South Carolina, with live and virtual bidding drawing buyers from across the continent and beyond.",
+    title: "Nationwide Buyer Reach",
+    body: "Access buyers searching for cranes, boom trucks, and heavy equipment across the USA.",
   },
   {
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-      </svg>
-    ),
-    title: "Specialist Expertise",
-    body: "Our crane division is led by Bryan Carr, with 30+ years in the heavy lift industry. We understand crane values, specifications, and what buyers are looking for. This isn't general equipment; this is specialist knowledge.",
+    title: "Marketplace Exposure",
+    body: "Get ongoing inventory visibility through our scalable crane marketplace platform.",
   },
   {
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-      </svg>
-    ),
-    title: "Maximum Asset Value",
-    body: "Competitive bidding drives prices up. Our global buyer network, targeted marketing, and professional presentation ensure your crane achieves its true market value, often exceeding private sale expectations.",
+    title: "Commercial Equipment Support",
+    body: "Support for fleet, contractor, dealer, and commercial equipment inventory.",
   },
   {
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-      </svg>
-    ),
-    title: "Transparent Process",
-    body: "From consignment to settlement, you're kept informed at every stage. No hidden fees, no surprises. Our sellers and buyers receive honest guidance backed by decades of auction integrity.",
+    title: "Upcoming Auctions",
+    body: "Browse upcoming crane auctions alongside direct inventory opportunities.",
   },
   {
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" />
-      </svg>
-    ),
-    title: "Global Buyer Network",
-    body: "Thousands of registered bidders across construction, energy, marine, and industrial sectors attend each crane auction, live and online. Your equipment is seen by the right people.",
+    title: "Dealer & Fleet Inventory",
+    body: "Connect with dealers, rental companies, contractors, and fleet sellers nationwide.",
   },
-  {
-    icon: (
-      <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    ),
-    title: "Fast Capital Recovery",
-    body: "Auctions compress timelines dramatically versus private sales. Turn idle or underutilised cranes into capital quickly, which is critical for fleet managers, project wind-downs, and estate liquidations.",
-  },
+];
+
+const icons = [
+  <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.7} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.7} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+  </svg>,
+  <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.7} d="M7 7h10M7 11h10M7 15h6M5 4h14a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2z" />
+  </svg>,
+  <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.7} d="M4 17h16M6 17V9h5v8m2 0V6h5v11" />
+  </svg>,
+  <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.7} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+  </svg>,
+  <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.7} d="M17 20h5V4H2v16h5m10 0v-6a2 2 0 00-2-2H9a2 2 0 00-2 2v6m10 0H7" />
+  </svg>,
 ];
 
 export default function WhyUs() {
   return (
-    <section id="why-us" className="bg-white py-20 lg:py-28">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <span className="text-[#c9a227] text-sm font-bold uppercase tracking-widest">Why Choose AuctionCrane</span>
-          <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-black text-[#1a1f2e] leading-tight">
-            The Trusted Specialist for<br className="hidden sm:block" /> Crane Auctions
+    <section id="why-us" className="bg-[#fcfcfd] py-16 lg:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="text-center">
+          <span className="text-sm font-bold uppercase text-[#c9a227]">
+            Why Choose Auction Crane
+          </span>
+          <h2 className="mt-4 text-3xl font-black tracking-tight text-[#0f1725] sm:text-4xl">
+            Trusted Crane Marketplace & Auction Specialists
           </h2>
-          <p className="mt-5 text-lg text-gray-500 max-w-2xl mx-auto">
-            We're not a general equipment auction house. We're a dedicated crane marketplace, built on deep industry knowledge and a track record of results.
+          <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-slate-600">
+            We help buyers and sellers connect through direct inventory
+            listings, upcoming auctions, dealer equipment, and commercial heavy
+            equipment opportunities.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
-          {reasons.map((r, i) => (
+        <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+          {reasons.map((reason, index) => (
             <div
-              key={i}
-              className="group relative p-8 border border-gray-100 rounded-lg hover:border-[#c9a227]/40 hover:shadow-lg transition-all duration-300 bg-white"
+              key={reason.title}
+              className="rounded-lg border border-slate-200 bg-white p-6 shadow-[0_14px_34px_rgba(15,23,37,0.06)] transition hover:-translate-y-1 hover:border-[#c9a227]/40"
             >
-              <div className="w-14 h-14 rounded-lg bg-[#1a1f2e] text-[#c9a227] flex items-center justify-center mb-5 group-hover:bg-[#c9a227] group-hover:text-[#1a1f2e] transition-colors duration-300">
-                {r.icon}
+              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#101827] text-[#c9a227]">
+                {icons[index]}
               </div>
-              <h3 className="text-lg font-bold text-[#1a1f2e] mb-3">{r.title}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">{r.body}</p>
+              <h3 className="mt-5 text-lg font-black text-[#0f1725]">
+                {reason.title}
+              </h3>
+              <p className="mt-2 text-sm leading-6 text-slate-600">
+                {reason.body}
+              </p>
             </div>
           ))}
         </div>

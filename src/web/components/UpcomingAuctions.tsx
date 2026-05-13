@@ -5,8 +5,10 @@ const events = [
     title: "Virtual Crane & Heavy Transport Auction",
     type: "Virtual",
     location: "Various Locations",
-    description: "Currently listed by Jeff Martin Auctioneers with bidding open for crane and heavy transport inventory across multiple locations.",
+    description:
+      "Current live JMA crane event featuring transport and support equipment inventory from across the United States.",
     featured: true,
+    image: "/crane-crawler.jpg",
   },
   {
     date: "May 15, 2026",
@@ -14,106 +16,161 @@ const events = [
     title: "Late Spring Construction & Transportation Public Auction",
     type: "Live",
     location: "Brooklyn, Mississippi",
-    description: "A current JMA public auction with construction and transportation inventory that is relevant for crane owners, fleet managers, and heavy equipment buyers.",
+    description:
+      "Bidding is open on this Mississippi public auction with commercial equipment, transportation assets, and heavy inventory.",
     featured: false,
+    image: "/crane-boom.jpg",
   },
   {
-    date: "May 28, 2026",
-    time: "10:00 AM CT",
-    title: "Americrane Strategic Fleet Update",
-    type: "Virtual",
-    location: "Various Locations",
-    description: "A crane-specific fleet update event currently on the live JMA calendar, with inventory still being added daily.",
+    date: "May 16, 2026",
+    time: "9:00 AM ET",
+    title: "Inaugural Central Kentucky Consignment Auction",
+    type: "Online & Live",
+    location: "Upton, Kentucky",
+    description:
+      "A fresh regional consignment event on the JMA calendar with inventory still being added daily.",
     featured: false,
+    image: "/crane-at.jpg",
   },
 ];
 
 export default function UpcomingAuctions() {
   return (
-    <section id="auctions" className="bg-gray-50 py-20 lg:py-28">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 mb-12">
+    <section id="auctions" className="bg-[#f8fafc] py-16 lg:py-20">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <span className="text-[#c9a227] text-sm font-bold uppercase tracking-widest">Auction Calendar</span>
-            <h2 className="mt-3 text-3xl sm:text-4xl lg:text-5xl font-black text-[#1a1f2e] leading-tight">
+            <span className="text-sm font-bold uppercase text-[#c9a227]">
+              Upcoming Crane Auctions
+            </span>
+            <h2 className="mt-4 text-3xl font-black tracking-tight text-[#0f1725] sm:text-4xl">
               Upcoming Crane Auctions
             </h2>
+            <p className="mt-3 max-w-2xl text-base leading-7 text-slate-600">
+              Browse upcoming crane auctions alongside marketplace inventory and
+              direct equipment opportunities.
+            </p>
           </div>
           <a
             href="https://www.jeffmartinauctioneers.com/auctions"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-3 border border-[#1a1f2e] text-[#1a1f2e] font-bold text-sm rounded hover:bg-[#1a1f2e] hover:text-white transition-colors uppercase tracking-wide whitespace-nowrap"
+            className="inline-flex items-center gap-2 rounded border border-[#0f1725] px-5 py-3 text-sm font-black uppercase text-[#0f1725] transition hover:bg-[#0f1725] hover:text-white whitespace-nowrap"
           >
             View All Auctions
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
             </svg>
           </a>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {events.map((ev, i) => (
+        <div className="grid gap-6 xl:grid-cols-[1fr_1fr_1fr_0.9fr]">
+          {events.map((event) => (
             <div
-              key={i}
-              className={`relative rounded-xl overflow-hidden ${ev.featured ? "bg-[#1a1f2e] ring-2 ring-[#c9a227]" : "bg-white border border-gray-200"}`}
+              key={event.title}
+              className={`overflow-hidden rounded-lg border shadow-[0_14px_34px_rgba(15,23,37,0.08)] ${
+                event.featured
+                  ? "border-[#c9a227]/60 bg-[#101827]"
+                  : "border-slate-200 bg-white"
+              }`}
             >
-              {ev.featured && (
-                <div className="absolute top-4 right-4 px-2.5 py-1 bg-[#c9a227] text-[#1a1f2e] text-xs font-black uppercase tracking-wider rounded">
-                  Next Event
+              <div className="relative h-44 overflow-hidden">
+                <img
+                  src={event.image}
+                  alt={event.title}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-full w-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#101827] via-[#101827]/55 to-transparent" />
+                {event.featured ? (
+                  <div className="absolute left-4 top-4 rounded-full bg-[#4ade80] px-3 py-1 text-[11px] font-black uppercase text-[#0f1725]">
+                    Next Event
+                  </div>
+                ) : null}
+                <div className="absolute bottom-4 left-4">
+                  <div className="rounded-full bg-white/90 px-3 py-1 text-[11px] font-black uppercase text-[#101827]">
+                    {event.type}
+                  </div>
                 </div>
-              )}
-              <div className="p-6 lg:p-7">
-                <div className={`text-xs font-bold uppercase tracking-widest mb-1 ${ev.featured ? "text-[#c9a227]" : "text-[#c9a227]"}`}>
-                  {ev.type}
+              </div>
+
+              <div className="p-6">
+                <div className="mb-2 text-xs font-bold uppercase text-[#c9a227]">
+                  {event.type}
                 </div>
-                <div className={`text-lg font-black leading-snug mb-1 ${ev.featured ? "text-white" : "text-[#1a1f2e]"}`}>
-                  {ev.title}
+                <div
+                  className={`text-xl font-black leading-snug ${
+                    event.featured ? "text-white" : "text-[#0f1725]"
+                  }`}
+                >
+                  {event.title}
                 </div>
-                <div className={`flex items-center gap-2 text-sm mb-3 ${ev.featured ? "text-gray-400" : "text-gray-500"}`}>
-                  <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div
+                  className={`mt-3 flex items-center gap-2 text-sm ${
+                    event.featured ? "text-slate-300" : "text-slate-500"
+                  }`}
+                >
+                  <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                   </svg>
-                  <span className="font-semibold">{ev.date}</span>
-                  <span>·</span>
-                  <span>{ev.time}</span>
+                  <span className="font-semibold">{event.date}</span>
+                  <span>|</span>
+                  <span>{event.time}</span>
                 </div>
-                <div className={`flex items-center gap-1.5 text-xs mb-4 ${ev.featured ? "text-gray-400" : "text-gray-500"}`}>
-                  <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div
+                  className={`mt-2 flex items-center gap-1.5 text-xs ${
+                    event.featured ? "text-slate-300" : "text-slate-500"
+                  }`}
+                >
+                  <svg className="h-3 w-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                   </svg>
-                  {ev.location}
+                  {event.location}
                 </div>
-                <p className={`text-sm leading-relaxed mb-5 ${ev.featured ? "text-gray-400" : "text-gray-500"}`}>
-                  {ev.description}
+                <p
+                  className={`mt-4 text-sm leading-6 ${
+                    event.featured ? "text-slate-300" : "text-slate-600"
+                  }`}
+                >
+                  {event.description}
                 </p>
-                <div className="flex flex-col gap-2">
+                <div className="mt-6">
                   <a
                     href="https://www.jeffmartinauctioneers.com/auctions"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`text-center py-2.5 text-xs font-bold uppercase tracking-wide rounded transition-colors ${ev.featured ? "bg-[#c9a227] text-[#1a1f2e] hover:bg-[#b8911f]" : "bg-[#1a1f2e] text-white hover:bg-[#262d42]"}`}
+                    className={`block rounded py-3 text-center text-xs font-black uppercase transition-colors ${
+                      event.featured
+                        ? "bg-[#c9a227] text-[#101827] hover:bg-[#b8911f]"
+                        : "bg-[#101827] text-white hover:bg-[#172131]"
+                    }`}
                   >
-                    View & Register to Bid
-                  </a>
-                  <a
-                    href="#lead-forms"
-                    className={`text-center py-2.5 text-xs font-bold uppercase tracking-wide rounded border transition-colors ${ev.featured ? "border-white/20 text-gray-300 hover:border-[#c9a227] hover:text-[#c9a227]" : "border-gray-300 text-gray-500 hover:border-[#c9a227] hover:text-[#c9a227]"}`}
-                  >
-                    Register Interest
+                    View Auction Details
                   </a>
                 </div>
               </div>
             </div>
           ))}
-        </div>
 
-        <div className="mt-10 p-5 bg-[#1a1f2e]/5 border border-[#1a1f2e]/10 rounded-lg text-center">
-          <p className="text-gray-600 text-sm">
-            <strong className="text-[#1a1f2e]">Want to consign in an upcoming auction?</strong>{" "}
-            Submit your crane details now and Bryan will recommend the best event for your equipment.{" "}
-            <a href="#lead-forms" className="text-[#c9a227] font-bold hover:underline">Submit a crane →</a>
-          </p>
+          <div className="rounded-lg bg-[linear-gradient(180deg,#101827_0%,#172234_100%)] p-8 text-white shadow-[0_14px_34px_rgba(15,23,37,0.16)]">
+            <p className="text-sm font-bold uppercase text-[#c9a227]">
+              Also Explore
+            </p>
+            <h3 className="mt-4 text-3xl font-black tracking-tight">
+              Marketplace Inventory
+            </h3>
+            <p className="mt-4 text-base leading-7 text-slate-300">
+              Browse direct crane listings, equipment inventory, and commercial
+              listings available now.
+            </p>
+            <a
+              href="#equipment"
+              className="mt-8 inline-flex rounded bg-[#c9a227] px-5 py-3 text-sm font-black uppercase text-[#101827] transition hover:bg-[#b8911f]"
+            >
+              Browse Marketplace
+            </a>
+          </div>
         </div>
       </div>
     </section>

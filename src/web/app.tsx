@@ -1,14 +1,16 @@
+import ContactFAQ from "@/components/ContactFAQ";
+import EquipmentGrid from "@/components/EquipmentGrid";
+import FleetSolutions from "@/components/FleetSolutions";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import WhyUs from "@/components/WhyUs";
 import HowItWorks from "@/components/HowItWorks";
-import EquipmentGrid from "@/components/EquipmentGrid";
-import TeamSection from "@/components/TeamSection";
+import InventoryByLocation from "@/components/InventoryByLocation";
 import LeadForms from "@/components/LeadForms";
-import UpcomingAuctions from "@/components/UpcomingAuctions";
+import TeamSection from "@/components/TeamSection";
 import Testimonials from "@/components/Testimonials";
-import ContactFAQ from "@/components/ContactFAQ";
-import Footer from "@/components/Footer";
+import UpcomingAuctions from "@/components/UpcomingAuctions";
+import WhyUs from "@/components/WhyUs";
 
 export default function App() {
   return (
@@ -16,9 +18,11 @@ export default function App() {
       <Header />
       <main>
         <Hero />
+        <EquipmentGrid />
         <WhyUs />
         <HowItWorks />
-        <EquipmentGrid />
+        <InventoryByLocation />
+        <FleetSolutions />
         <TeamSection />
         <LeadForms />
         <UpcomingAuctions />

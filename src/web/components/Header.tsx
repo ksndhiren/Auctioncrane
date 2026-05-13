@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -11,93 +11,89 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { label: "Why AuctionCrane", href: "#why-us" },
-    { label: "How It Works", href: "#how-it-works" },
-    { label: "Equipment", href: "#equipment" },
-    { label: "Our Expert", href: "#bryan-carr" },
-    { label: "Auctions", href: "#auctions" },
-    { label: "Contact", href: "#contact" },
+    { label: "Cranes For Sale", href: "#equipment" },
+    { label: "Marketplace", href: "#fleet-solutions" },
+    { label: "Crane Auctions", href: "#auctions" },
+    { label: "Sell", href: "#connect" },
+    { label: "Resources", href: "#faq" },
+    { label: "About", href: "#team" },
+    { label: "Contact", href: "#connect" },
   ];
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-[#1a1f2e] shadow-lg" : "bg-[#1a1f2e]/90 backdrop-blur-sm"
+      className={`fixed left-0 right-0 top-0 z-50 transition-all duration-300 ${
+        scrolled ? "bg-[#101827] shadow-lg" : "bg-[#101827]/92 backdrop-blur-sm"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Logo */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between lg:h-[72px]">
           <a href="#" className="flex-shrink-0">
-            <img src="/logo.png" alt="AuctionCrane" className="h-14 lg:h-16 w-auto" />
+            <img src="/logo.png" alt="AuctionCrane" className="h-10 w-auto lg:h-12" />
           </a>
 
-          {/* Desktop nav */}
-          <nav className="hidden lg:flex items-center gap-6 xl:gap-8">
+          <nav className="hidden items-center gap-4 xl:flex">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="text-gray-300 hover:text-[#c9a227] text-sm font-medium transition-colors duration-200 tracking-wide uppercase"
+                className="text-xs font-semibold uppercase text-gray-300 transition-colors duration-200 hover:text-[#c9a227]"
               >
                 {link.label}
               </a>
             ))}
           </nav>
 
-          {/* Desktop CTAs */}
-          <div className="hidden lg:flex items-center gap-3">
+          <div className="hidden items-center gap-2 lg:flex">
             <a
-              href="#lead-forms"
-              className="px-4 py-2 text-sm font-semibold text-[#c9a227] border border-[#c9a227] rounded hover:bg-[#c9a227] hover:text-[#1a1f2e] transition-all duration-200 tracking-wide uppercase"
+              href="#connect"
+              className="rounded border border-white/20 px-3 py-2 text-xs font-bold uppercase text-white transition-all duration-200 hover:border-[#c9a227] hover:text-[#c9a227]"
             >
-              Sell a Crane
+              Login
             </a>
             <a
-              href="#lead-forms"
-              onClick={() => {
-                setTimeout(() => {
-                  const buyerTab = document.querySelector('[data-tab="buyer"]') as HTMLElement;
-                  buyerTab?.click();
-                }, 100);
-              }}
-              className="px-4 py-2 text-sm font-semibold bg-[#c9a227] text-[#1a1f2e] rounded hover:bg-[#b8911f] transition-all duration-200 tracking-wide uppercase"
+              href="#connect"
+              className="rounded bg-[#c9a227] px-3 py-2 text-xs font-bold uppercase text-[#101827] transition-all duration-200 hover:bg-[#b8911f]"
             >
-              Buy Equipment
+              Sell Equipment
             </a>
           </div>
 
-          {/* Mobile menu button */}
           <button
-            className="lg:hidden text-white p-2"
+            className="p-2 text-white lg:hidden"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
-            <div className={`w-6 h-0.5 bg-white mb-1.5 transition-all ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
-            <div className={`w-6 h-0.5 bg-white mb-1.5 transition-all ${menuOpen ? "opacity-0" : ""}`} />
-            <div className={`w-6 h-0.5 bg-white transition-all ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+            <div className={`mb-1.5 h-0.5 w-6 bg-white transition-all ${menuOpen ? "translate-y-2 rotate-45" : ""}`} />
+            <div className={`mb-1.5 h-0.5 w-6 bg-white transition-all ${menuOpen ? "opacity-0" : ""}`} />
+            <div className={`h-0.5 w-6 bg-white transition-all ${menuOpen ? "-translate-y-2 -rotate-45" : ""}`} />
           </button>
         </div>
 
-        {/* Mobile menu */}
         {menuOpen && (
-          <div className="lg:hidden border-t border-white/10 py-4 pb-6">
+          <div className="border-t border-white/10 py-4 pb-6 lg:hidden">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="block py-2.5 text-gray-300 hover:text-[#c9a227] text-sm font-medium uppercase tracking-wide"
+                className="block py-2.5 text-sm font-medium uppercase tracking-wide text-gray-300 hover:text-[#c9a227]"
               >
                 {link.label}
               </a>
             ))}
-            <div className="flex flex-col gap-2 mt-4">
-              <a href="#lead-forms" className="w-full text-center py-2.5 text-sm font-semibold text-[#c9a227] border border-[#c9a227] rounded uppercase">
-                Sell a Crane
+            <div className="mt-4 flex flex-col gap-2">
+              <a
+                href="#connect"
+                className="w-full rounded text-center py-2.5 text-sm font-semibold uppercase text-[#c9a227] border border-[#c9a227]"
+              >
+                Login
               </a>
-              <a href="#lead-forms" className="w-full text-center py-2.5 text-sm font-semibold bg-[#c9a227] text-[#1a1f2e] rounded uppercase">
-                Buy Equipment
+              <a
+                href="#connect"
+                className="w-full rounded bg-[#c9a227] py-2.5 text-center text-sm font-semibold uppercase text-[#101827]"
+              >
+                Sell Equipment
               </a>
             </div>
           </div>
