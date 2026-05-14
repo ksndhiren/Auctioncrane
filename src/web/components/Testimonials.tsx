@@ -1,7 +1,7 @@
 const testimonials = [
   {
     quote:
-      "Auction Crane helped us find the perfect crawler crane for our project. The marketplace was easy to use and the team was very responsive.",
+      "CranesAuctions helped us find the perfect crawler crane for our project. The marketplace was easy to use and the team was very responsive.",
     name: "Mike R.",
     title: "Contractor",
     location: "",
@@ -9,7 +9,7 @@ const testimonials = [
   },
   {
     quote:
-      "We sold our extra crane fleet through Auction Crane. Excellent exposure and we reached serious buyers quickly.",
+      "We sold our extra crane fleet through CranesAuctions. Excellent exposure and we reached serious buyers quickly.",
     name: "James D.",
     title: "Fleet Manager",
     location: "Georgia",

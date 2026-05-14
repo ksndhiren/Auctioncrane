@@ -6,7 +6,13 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-14">
         <div className="grid gap-10 lg:grid-cols-[1.1fr_0.8fr_0.8fr_0.8fr_0.9fr]">
           <div>
-            <img src="/logo.png" alt="AuctionCrane" className="h-14 w-auto" loading="lazy" decoding="async" />
+            <img
+              src="/Cranesauctions.png"
+              alt="CranesAuctions"
+              className="h-auto w-[150px] max-w-full"
+              loading="lazy"
+              decoding="async"
+            />
             <p className="mt-4 max-w-sm text-sm leading-7 text-slate-400">
               The trusted crane marketplace and auction specialists connecting
               buyers, sellers, dealers, and contractors across the USA.
@@ -103,7 +109,7 @@ export default function Footer() {
 
         <div className="mt-10 flex flex-col gap-4 border-t border-white/5 pt-8 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-slate-500">
-            &copy; {year} AuctionCrane. All rights reserved.
+            &copy; {year} CranesAuctions. All rights reserved.
           </p>
           <div className="flex items-center gap-3">
             <span className="text-xs text-slate-500">Powered by</span>

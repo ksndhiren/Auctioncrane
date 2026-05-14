@@ -27,15 +27,19 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between lg:h-[72px]">
-          <a href="#" className="flex min-w-0 flex-shrink-0 items-center gap-2.5 lg:gap-3">
-            <img src="/logo.png" alt="AuctionCrane" className="h-10 w-auto lg:h-12" />
-            <span className="flex min-w-0 items-center gap-1.5 text-[9px] font-semibold uppercase tracking-[0.16em] text-white/70 lg:gap-2 lg:text-[10px]">
+        <div className="flex h-[70px] items-center justify-between lg:h-[82px]">
+          <a href="#" className="flex min-w-0 flex-shrink-0 items-end gap-2 lg:gap-2.5">
+            <img
+              src="/Cranesauctions.png"
+              alt="CranesAuctions"
+              className="h-auto w-[110px] max-w-full lg:w-[145px]"
+            />
+            <span className="mb-0.5 flex min-w-0 items-center gap-1 text-[5px] font-semibold uppercase tracking-[0.12em] text-white/60 lg:mb-1 lg:gap-1 lg:text-[6px]">
               <span className="whitespace-nowrap">Powered by</span>
               <img
                 src="/jma-logo-new.png"
                 alt="Jeff Martin Auctioneers Inc"
-                className="h-4 w-auto brightness-0 invert lg:h-5"
+                className="h-2.5 w-auto brightness-0 invert lg:h-3"
                 loading="lazy"
                 decoding="async"
               />
