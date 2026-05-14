@@ -59,15 +59,6 @@ export default function InventoryByLocation() {
             </div>
           ))}
         </div>
-
-        <div className="mt-8 text-center">
-          <a
-            href="#equipment"
-            className="text-sm font-bold uppercase text-[#101827] transition hover:text-[#c9a227]"
-          >
-            View All Locations
-          </a>
-        </div>
       </div>
     </section>
   );
