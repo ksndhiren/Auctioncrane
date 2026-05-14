@@ -31,15 +31,15 @@ export default function Header() {
           <a href="#" className="flex min-w-0 flex-shrink-0 items-end gap-2 lg:gap-2.5">
             <img
               src="/Cranesauctions.png"
-              alt="CranesAuctions"
+              alt="Jeff Martin Auctioneers"
               className="h-auto w-[110px] max-w-full lg:w-[145px]"
             />
-            <span className="mb-0.5 flex min-w-0 items-center gap-1 text-[5px] font-semibold uppercase tracking-[0.12em] text-white/60 lg:mb-1 lg:gap-1 lg:text-[6px]">
-              <span className="whitespace-nowrap">Powered by</span>
+            <span className="flex min-w-0 items-end gap-1.5 pb-1 text-[7px] font-semibold uppercase tracking-[0.12em] text-white/70 lg:gap-2 lg:pb-1.5 lg:text-[8px]">
+              <span className="whitespace-nowrap leading-none">Powered by</span>
               <img
                 src="/jma-logo-new.png"
                 alt="Jeff Martin Auctioneers Inc"
-                className="h-2.5 w-auto brightness-0 invert lg:h-3"
+                className="h-7 w-auto brightness-0 invert lg:h-8"
                 loading="lazy"
                 decoding="async"
               />

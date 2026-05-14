@@ -8,7 +8,7 @@ export default function Footer() {
           <div>
             <img
               src="/Cranesauctions.png"
-              alt="CranesAuctions"
+              alt="Jeff Martin Auctioneers"
               className="h-auto w-[150px] max-w-full"
               loading="lazy"
               decoding="async"
@@ -98,7 +98,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:bryan.c@jeffmartinauctioneers.com" className="break-all text-sm transition-colors hover:text-[#c9a227]">
+                <a href="mailto:bryan.c@jeffmartinauctioneers.com" className="text-sm transition-colors hover:text-[#c9a227] lg:whitespace-nowrap">
                   bryan.c@jeffmartinauctioneers.com
                 </a>
               </li>
@@ -109,7 +109,7 @@ export default function Footer() {
 
         <div className="mt-10 flex flex-col gap-4 border-t border-white/5 pt-8 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-slate-500">
-            &copy; {year} CranesAuctions. All rights reserved.
+            &copy; {year} Jeff Martin Auctioneers. All rights reserved.
           </p>
           <div className="flex items-center gap-3">
             <span className="text-xs text-slate-500">Powered by</span>

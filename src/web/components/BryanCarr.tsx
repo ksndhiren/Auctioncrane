@@ -49,7 +49,7 @@ export default function BryanCarr() {
             </blockquote>
 
             <p className="text-gray-600 leading-relaxed mb-6">
-              Bryan Carr has spent over three decades embedded in the heavy lift industry, from crane rental and sales to major construction disciplines across North America. As CranesAuctions' dedicated specialist, Bryan brings unmatched technical knowledge and a trusted network of crane owners, dealers, and buyers.
+              Bryan Carr has spent over three decades embedded in the heavy lift industry, from crane rental and sales to major construction disciplines across North America. As Jeff Martin Auctioneers' dedicated specialist, Bryan brings unmatched technical knowledge and a trusted network of crane owners, dealers, and buyers.
             </p>
             <p className="text-gray-600 leading-relaxed mb-8">
               Whether you're a construction company looking to liquidate a fleet, an equipment dealer with surplus inventory, or a buyer searching for a specific crane type, Bryan personally manages every relationship. You won't deal with a call centre; you'll work directly with one of North America's foremost crane specialists.

@@ -46,7 +46,7 @@ export default function WhyUs() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <span className="text-sm font-bold uppercase text-[#c9a227]">
-            Why Choose CranesAuctions
+            Why Choose Jeff Martin Auctioneers
           </span>
           <h2 className="mt-4 text-3xl font-black tracking-tight text-[#0f1725] sm:text-4xl">
             Trusted Crane Marketplace & Auction Specialists

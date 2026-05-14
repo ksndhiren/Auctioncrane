@@ -24,7 +24,7 @@ export default function Hero() {
 
           <div className="mt-5 max-w-[720px] space-y-3 text-base leading-7 text-slate-200">
             <p>
-              CranesAuctions connects buyers, dealers, contractors, fleet owners,
+              Jeff Martin Auctioneers connects buyers, dealers, contractors, fleet owners,
               and equipment sellers through a nationwide crane marketplace
               featuring direct inventory, dealer equipment, and upcoming crane
               auctions.
