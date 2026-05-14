@@ -48,13 +48,13 @@ export default function FleetSolutions() {
             <p className="text-sm font-bold uppercase text-[#c9a227]">
               Commercial & Fleet Solutions
             </p>
-            <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">
-              Commercial & Fleet Equipment Solutions
-            </h2>
-            <p className="mt-4 max-w-xl text-base leading-7 text-slate-300">
-              We support businesses with fleet transitions, inventory
-              management, and heavy equipment sales.
-            </p>
+          <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">
+            Equipment Marketplace Solutions
+          </h2>
+          <p className="mt-4 max-w-xl text-base leading-7 text-slate-300">
+            Supporting dealers, contractors, and fleet operators with scalable
+            equipment visibility.
+          </p>
           </div>
 
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">

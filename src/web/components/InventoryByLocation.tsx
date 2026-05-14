@@ -5,29 +5,19 @@ const locations = [
     blurb: "Gulf Coast and industrial corridor inventory.",
   },
   {
-    name: "South Carolina",
-    image: "/crane-crawler.jpg",
-    blurb: "Port, utility, and infrastructure equipment.",
-  },
-  {
     name: "Florida",
     image: "/crane-boom.jpg",
     blurb: "Dealer inventory and transportation assets.",
   },
   {
-    name: "Gulf South",
-    image: "/crane-carry.jpg",
-    blurb: "Heavy transport and project support equipment.",
-  },
-  {
-    name: "Minnesota",
-    image: "/crane-tower.jpg",
-    blurb: "Midwest fleet and contractor opportunities.",
-  },
-  {
     name: "Georgia",
     image: "/crane-rt.jpg",
     blurb: "Regional crane and heavy equipment listings.",
+  },
+  {
+    name: "Gulf South",
+    image: "/crane-carry.jpg",
+    blurb: "Heavy transport and project support equipment.",
   },
 ];
 
@@ -43,12 +33,12 @@ export default function InventoryByLocation() {
             Crane Inventory By Location
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-600">
-            Find cranes and heavy equipment inventory across key regions in the
-            USA.
+            Explore crane and heavy equipment inventory across major equipment
+            markets.
           </p>
         </div>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-6">
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
           {locations.map((location) => (
             <div
               key={location.name}
@@ -68,6 +58,15 @@ export default function InventoryByLocation() {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="mt-8 text-center">
+          <a
+            href="#equipment"
+            className="text-sm font-bold uppercase text-[#101827] transition hover:text-[#c9a227]"
+          >
+            View All Locations
+          </a>
         </div>
       </div>
     </section>

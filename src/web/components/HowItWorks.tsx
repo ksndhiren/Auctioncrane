@@ -1,36 +1,36 @@
 const sellerSteps = [
   {
     num: "01",
-    title: "Submit Your Equipment",
-    body: "List your cranes, boom trucks, and heavy equipment with full details and photos.",
+    title: "List Your Equipment",
+    body: "Add crane inventory and equipment details through our marketplace platform.",
   },
   {
     num: "02",
     title: "Reach Serious Buyers",
-    body: "Get connected with contractors, dealers, fleet owners, and equipment buyers.",
+    body: "Connect with contractors, fleet operators, and equipment buyers nationwide.",
   },
   {
     num: "03",
-    title: "Maximise Visibility",
-    body: "Your equipment gets exposure across our marketplace and auction channels.",
+    title: "Increase Marketplace Visibility",
+    body: "Gain additional exposure through crane listings and auction visibility.",
   },
 ];
 
 const buyerSteps = [
   {
     num: "01",
-    title: "Browse Inventory",
-    body: "Explore cranes, equipment categories, dealer inventory, and upcoming auctions.",
+    title: "Browse Crane Inventory",
+    body: "Explore cranes, heavy equipment, and dealer inventory categories.",
   },
   {
     num: "02",
     title: "Compare Equipment",
-    body: "Compare equipment, pricing, condition, and sellers with ease.",
+    body: "Review available equipment options and seller information.",
   },
   {
     num: "03",
     title: "Connect & Buy",
-    body: "Connect with sellers, bid in auctions, or buy direct through the marketplace.",
+    body: "Contact sellers directly or participate in upcoming crane auctions.",
   },
 ];
 
@@ -78,13 +78,14 @@ export default function HowItWorks() {
             className="mt-3 text-3xl font-black leading-tight text-white sm:text-4xl lg:text-5xl"
             style={{ fontFamily: "'Chakra Petch', sans-serif" }}
           >
-            How The Crane Marketplace Works
+            Simple Crane Marketplace Process
           </h2>
           <p
             className="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-300"
             style={{ fontFamily: "'Manrope', sans-serif" }}
           >
-            A simple and transparent process for both buyers and sellers.
+            A streamlined process for crane buyers, equipment dealers, and
+            fleet sellers.
           </p>
         </div>
 

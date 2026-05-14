@@ -21,9 +21,8 @@ export default function EquipmentGrid() {
             Browse Crane & Equipment Categories
           </h2>
           <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-slate-600">
-            Explore crane marketplace categories designed to help buyers
-            discover commercial crane inventory, heavy equipment listings, and
-            upcoming equipment opportunities.
+            Explore crane inventory, dealer equipment, and heavy machinery
+            across multiple equipment categories.
           </p>
         </div>
 
@@ -48,15 +47,6 @@ export default function EquipmentGrid() {
               </div>
             </div>
           ))}
-        </div>
-
-        <div className="mt-8 text-center">
-          <a
-            href="#fleet-solutions"
-            className="text-sm font-bold uppercase text-[#101827] transition hover:text-[#c9a227]"
-          >
-            View All Categories
-          </a>
         </div>
       </div>
     </section>

@@ -47,8 +47,8 @@ export default function UpcomingAuctions() {
               Upcoming Crane Auctions
             </h2>
             <p className="mt-3 max-w-2xl text-base leading-7 text-slate-600">
-              Browse upcoming crane auctions alongside marketplace inventory and
-              direct equipment opportunities.
+              Browse featured crane auctions and equipment opportunities from
+              across the marketplace.
             </p>
           </div>
           <a
@@ -64,7 +64,7 @@ export default function UpcomingAuctions() {
           </a>
         </div>
 
-        <div className="grid gap-6 xl:grid-cols-[1fr_1fr_1fr_0.9fr]">
+        <div className="grid gap-6 lg:grid-cols-3">
           {events.map((event) => (
             <div
               key={event.title}
@@ -74,7 +74,7 @@ export default function UpcomingAuctions() {
                   : "border-slate-200 bg-white"
               }`}
             >
-              <div className="relative h-44 overflow-hidden">
+              <div className="relative h-40 overflow-hidden">
                 <img
                   src={event.image}
                   alt={event.title}
@@ -95,12 +95,12 @@ export default function UpcomingAuctions() {
                 </div>
               </div>
 
-              <div className="flex flex-1 flex-col p-6">
+              <div className="flex flex-1 flex-col p-5">
                 <div className="mb-2 text-xs font-bold uppercase text-[#c9a227]">
                   {event.type}
                 </div>
                 <div
-                  className={`min-h-[84px] text-xl font-black leading-snug ${
+                  className={`min-h-[72px] text-xl font-black leading-snug ${
                     event.featured ? "text-white" : "text-[#0f1725]"
                   }`}
                 >
@@ -129,13 +129,13 @@ export default function UpcomingAuctions() {
                   {event.location}
                 </div>
                 <p
-                  className={`mt-4 min-h-[96px] text-sm leading-6 ${
+                  className={`mt-3 min-h-[84px] text-sm leading-6 ${
                     event.featured ? "text-slate-300" : "text-slate-600"
                   }`}
                 >
                   {event.description}
                 </p>
-                <div className="mt-6">
+                <div className="mt-5">
                   <a
                     href="https://www.jeffmartinauctioneers.com/auctions"
                     target="_blank"
@@ -152,25 +152,6 @@ export default function UpcomingAuctions() {
               </div>
             </div>
           ))}
-
-          <div className="flex h-full flex-col rounded-lg bg-[linear-gradient(180deg,#101827_0%,#172234_100%)] p-8 text-white shadow-[0_14px_34px_rgba(15,23,37,0.16)]">
-            <p className="text-sm font-bold uppercase text-[#c9a227]">
-              Also Explore
-            </p>
-            <h3 className="mt-4 text-3xl font-black tracking-tight">
-              Marketplace Inventory
-            </h3>
-            <p className="mt-4 text-base leading-7 text-slate-300">
-              Browse direct crane listings, equipment inventory, and commercial
-              listings available now.
-            </p>
-            <a
-              href="#equipment"
-              className="mt-auto inline-flex rounded bg-[#c9a227] px-5 py-3 text-sm font-black uppercase text-[#101827] transition hover:bg-[#b8911f]"
-            >
-              Browse Marketplace
-            </a>
-          </div>
         </div>
       </div>
     </section>

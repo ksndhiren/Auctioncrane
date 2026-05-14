@@ -17,9 +17,6 @@ export default function Footer() {
               The trusted crane marketplace and auction specialists connecting
               buyers, sellers, dealers, and contractors across the USA.
             </p>
-            <p className="mt-4 text-xs font-semibold uppercase text-slate-500">
-              Powered by Jeff Martin Auctioneers, Inc.
-            </p>
           </div>
 
           <div>

@@ -10,25 +10,21 @@ const faqs = [
     a: "Yes. Buyers can explore both direct inventory and upcoming auction opportunities.",
   },
   {
-    q: "What types of cranes are available?",
-    a: "Inventory may include crawler cranes, tower cranes, boom trucks, rough terrain cranes, and utility equipment.",
+    q: "Can I sell used cranes through the platform?",
+    a: "Yes. Sellers can list used cranes and heavy equipment through the marketplace.",
   },
   {
-    q: "Do you support commercial fleet equipment?",
-    a: "Yes. We support fleet inventory, dealer equipment, and contractor inventory opportunities.",
+    q: "Do you support dealer inventory listings?",
+    a: "Yes. We support dealer inventory, fleet equipment, and contractor listings.",
   },
   {
-    q: "Can I sell my crane or heavy equipment?",
-    a: "Yes. Sellers can list cranes and heavy equipment inventory through the marketplace.",
-  },
-  {
-    q: "Do you ship equipment nationwide?",
-    a: "Equipment opportunities are available across multiple USA regions.",
+    q: "How do crane auctions work?",
+    a: "Buyers can review upcoming events, explore inventory, and participate in auction opportunities alongside direct listings.",
   },
 ];
 
 export default function ContactFAQ() {
-  const [open, setOpen] = useState<number | null>(0);
+  const [open, setOpen] = useState<number | null>(null);
 
   return (
     <section id="faq" className="bg-white py-16 lg:py-20">
@@ -94,9 +90,8 @@ export default function ContactFAQ() {
                     Explore Crane Inventory Across The USA
                   </h2>
                   <p className="mt-4 text-base leading-7 text-slate-300">
-                    Access crane marketplace listings, upcoming auctions, dealer
-                    inventory, and commercial equipment opportunities
-                    nationwide.
+                    Browse crane inventory, upcoming auctions, dealer listings,
+                    and equipment marketplace opportunities.
                   </p>
                   <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                     <a

@@ -1,23 +1,15 @@
 const reasons = [
   {
-    title: "Nationwide Buyer Reach",
-    body: "Access buyers searching for cranes, boom trucks, and heavy equipment across the USA.",
-  },
-  {
-    title: "Marketplace Exposure",
-    body: "Get ongoing inventory visibility through our scalable crane marketplace platform.",
-  },
-  {
-    title: "Commercial Equipment Support",
-    body: "Support for fleet, contractor, dealer, and commercial equipment inventory.",
-  },
-  {
-    title: "Upcoming Auctions",
-    body: "Browse upcoming crane auctions alongside direct inventory opportunities.",
+    title: "Nationwide Buyer Network",
+    body: "Connect with crane buyers, contractors, and equipment companies across the USA.",
   },
   {
     title: "Dealer & Fleet Inventory",
-    body: "Connect with dealers, rental companies, contractors, and fleet sellers nationwide.",
+    body: "Browse dealer inventory and fleet equipment through one scalable marketplace.",
+  },
+  {
+    title: "Upcoming Auctions",
+    body: "Access upcoming crane auctions and equipment opportunities in one place.",
   },
 ];
 
@@ -58,7 +50,7 @@ export default function WhyUs() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+        <div className="mt-12 grid gap-4 md:grid-cols-3">
           {reasons.map((reason, index) => (
             <div
               key={reason.title}

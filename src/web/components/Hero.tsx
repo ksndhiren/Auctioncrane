@@ -18,26 +18,15 @@ export default function Hero() {
           </p>
 
           <h1 className="mt-4 max-w-[840px] text-[42px] font-black leading-[1.02] text-white sm:text-5xl lg:text-[64px]">
-            Buy & Sell Cranes Through a Trusted Heavy Equipment{" "}
+            Buy & Sell Cranes Through a Trusted Equipment{" "}
             <span className="text-[#c9a227]">Marketplace</span>
           </h1>
 
-          <div className="mt-5 max-w-[720px] space-y-3 text-base leading-7 text-slate-200">
+          <div className="mt-5 max-w-[700px] text-base leading-7 text-slate-200">
             <p>
-              Jeff Martin Auctioneers connects buyers, dealers, contractors, fleet owners,
-              and equipment sellers through a nationwide crane marketplace
-              featuring direct inventory, dealer equipment, and upcoming crane
-              auctions.
-            </p>
-            <p>
-              Browse crawler cranes, tower cranes, boom trucks, rough terrain
-              cranes, all terrain cranes, and heavy equipment inventory across
-              the USA.
-            </p>
-            <p>
-              Whether you are searching for commercial crane inventory, upcoming
-              auctions, or looking to sell heavy equipment, our marketplace is
-              built to connect serious buyers and sellers in one place.
+              Connect with crane buyers, dealers, contractors, and fleet
+              sellers through a nationwide heavy equipment marketplace and
+              auction platform.
             </p>
           </div>
 
@@ -56,12 +45,11 @@ export default function Hero() {
             </a>
           </div>
 
-          <div className="mt-10 grid max-w-4xl gap-4 border-t border-white/10 pt-7 sm:grid-cols-2 lg:grid-cols-4">
+          <div className="mt-10 grid max-w-4xl gap-4 border-t border-white/10 pt-7 sm:grid-cols-3">
             {[
               { value: "30+", label: "Years Industry Experience" },
               { value: "500+", label: "Buyer Network" },
-              { value: "4", label: "Auction Specialists" },
-              { value: "Global", label: "Equipment Reach" },
+              { value: "Nationwide", label: "Equipment Reach" },
             ].map((stat) => (
               <div key={stat.label} className="flex items-center gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full border border-[#c9a227]/35 bg-[#c9a227]/10 text-[#c9a227]">

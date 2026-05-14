@@ -404,22 +404,22 @@ export default function LeadForms() {
   const [active, setActive] = useState<"seller" | "buyer">("buyer");
 
   return (
-    <section id="connect" className="bg-white py-14 lg:py-16">
+    <section id="connect" className="bg-[#101827] py-14 lg:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
           <div>
             <span className="text-sm font-bold uppercase text-[#c9a227]">
               Connect With Us
             </span>
-            <h2 className="mt-4 text-3xl font-black tracking-tight text-[#0f1725] sm:text-4xl">
-              Connect With Our Team
+            <h2 className="mt-4 text-3xl font-black tracking-tight text-white sm:text-4xl">
+              Speak With Marketplace Specialists
             </h2>
-            <p className="mt-4 max-w-xl text-base leading-7 text-slate-600">
-              Speak with our team about your equipment needs or selling
-              opportunities.
+            <p className="mt-4 max-w-xl text-base leading-7 text-slate-300">
+              Connect with our team to discuss crane inventory, equipment
+              listings, auctions, or marketplace opportunities.
             </p>
 
-            <div className="mt-8 space-y-4 rounded-lg border border-slate-200 bg-[#f8fafc] p-6">
+            <div className="mt-8 space-y-4 rounded-lg border border-white/10 bg-white/5 p-6">
               <div className="flex items-start gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#101827] text-[#c9a227]">
                   <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -427,12 +427,12 @@ export default function LeadForms() {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-xs font-semibold uppercase text-slate-500">
+                  <div className="text-xs font-semibold uppercase text-slate-400">
                     Call us
                   </div>
                   <a
                     href="tel:+16015086207"
-                    className="mt-1 block text-lg font-black text-[#0f1725] hover:text-[#c9a227]"
+                    className="mt-1 block text-lg font-black text-white hover:text-[#c9a227]"
                   >
                     601.508.6207
                   </a>
@@ -445,12 +445,12 @@ export default function LeadForms() {
                   </svg>
                 </div>
                 <div className="min-w-0">
-                  <div className="text-xs font-semibold uppercase text-slate-500">
+                  <div className="text-xs font-semibold uppercase text-slate-400">
                     Email
                   </div>
                   <a
                     href="mailto:bryan.c@jeffmartinauctioneers.com"
-                    className="mt-1 block truncate text-lg font-black text-[#0f1725] hover:text-[#c9a227]"
+                    className="mt-1 block truncate text-lg font-black text-white hover:text-[#c9a227]"
                   >
                     bryan.c@jeffmartinauctioneers.com
                   </a>
@@ -464,10 +464,10 @@ export default function LeadForms() {
                   </svg>
                 </div>
                 <div>
-                  <div className="text-xs font-semibold uppercase text-slate-500">
+                  <div className="text-xs font-semibold uppercase text-slate-400">
                     Coverage
                   </div>
-                  <div className="mt-1 text-base font-bold text-[#0f1725]">
+                  <div className="mt-1 text-base font-bold text-white">
                     Nationwide crane, dealer, and commercial inventory support
                   </div>
                 </div>

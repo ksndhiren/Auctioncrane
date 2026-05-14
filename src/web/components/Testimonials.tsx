@@ -1,7 +1,7 @@
 const testimonials = [
   {
     quote:
-      "Jeff Martin Auctioneers helped us find the perfect crawler crane for our project. The marketplace was easy to use and the team was very responsive.",
+      "Jeff Martin Auctioneers helped us connect with quality crane buyers quickly and efficiently.",
     name: "Mike R.",
     title: "Contractor",
     location: "",
@@ -9,7 +9,7 @@ const testimonials = [
   },
   {
     quote:
-      "We sold our extra crane fleet through Jeff Martin Auctioneers. Excellent exposure and we reached serious buyers quickly.",
+      "The marketplace made it easier to explore inventory and upcoming crane auctions.",
     name: "James D.",
     title: "Fleet Manager",
     location: "Georgia",
@@ -28,7 +28,7 @@ const testimonials = [
 const stats = [
   { value: "2009", label: "Founded" },
   { value: "500+", label: "Active Buyers" },
-  { value: "Global", label: "Equipment Reach" },
+  { value: "Nationwide", label: "Marketplace Reach" },
 ];
 
 export default function Testimonials() {
@@ -40,7 +40,7 @@ export default function Testimonials() {
             Trusted By Buyers & Sellers
           </span>
           <h2 className="mt-4 text-3xl font-black tracking-tight text-white sm:text-4xl">
-            Trusted By Crane Owners & Equipment Buyers
+            Trusted By Crane Buyers & Equipment Sellers
           </h2>
         </div>
 
