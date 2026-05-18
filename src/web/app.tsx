@@ -1,35 +1,17 @@
-import ContactFAQ from "@/components/ContactFAQ";
-import EquipmentGrid from "@/components/EquipmentGrid";
-import FleetSolutions from "@/components/FleetSolutions";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
-import HowItWorks from "@/components/HowItWorks";
-import InventoryByLocation from "@/components/InventoryByLocation";
-import LeadForms from "@/components/LeadForms";
-import TeamSection from "@/components/TeamSection";
-import Testimonials from "@/components/Testimonials";
-import UpcomingAuctions from "@/components/UpcomingAuctions";
-import WhyUs from "@/components/WhyUs";
+import BlogIndexPage from "@/pages/BlogIndexPage";
+import BlogPostPage from "@/pages/BlogPostPage";
+import HomePage from "@/pages/HomePage";
+import { Route, Switch } from "wouter";
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <main>
-        <Hero />
-        <EquipmentGrid />
-        <WhyUs />
-        <HowItWorks />
-        <InventoryByLocation />
-        <FleetSolutions />
-        <TeamSection />
-        <LeadForms />
-        <UpcomingAuctions />
-        <Testimonials />
-        <ContactFAQ />
-      </main>
-      <Footer />
-    </div>
+    <Switch>
+      <Route path="/" component={HomePage} />
+      <Route path="/blog" component={BlogIndexPage} />
+      <Route path="/blog/:slug">
+        {(params) => <BlogPostPage slug={params.slug} />}
+      </Route>
+      <Route component={HomePage} />
+    </Switch>
   );
 }

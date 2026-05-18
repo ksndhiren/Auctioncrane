@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/5 bg-[#0b1220]">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-14">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.8fr_0.8fr_0.8fr_0.9fr]">
+        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.8fr_0.8fr_0.8fr_0.8fr_0.9fr]">
           <div>
             <img
               src="/Cranesauctions.png"
@@ -27,10 +27,10 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5">
               {[
-                { label: "Cranes For Sale", href: "#equipment" },
-                { label: "Equipment Marketplace", href: "#fleet-solutions" },
-                { label: "Inventory By Location", href: "#equipment" },
-                { label: "All Categories", href: "#equipment" },
+                { label: "Cranes For Sale", href: "/#equipment" },
+                { label: "Equipment Marketplace", href: "/#fleet-solutions" },
+                { label: "Inventory By Location", href: "/#equipment" },
+                { label: "All Categories", href: "/#equipment" },
               ].map((link) => (
                 <li key={link.label}>
                   <a href={link.href} className="text-sm text-slate-400 transition-colors hover:text-[#c9a227]">
@@ -72,13 +72,36 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5">
               {[
-                { label: "Sell Your Crane", href: "#connect" },
-                { label: "Consignment Support", href: "#connect" },
-                { label: "Fleet Solutions", href: "#fleet-solutions" },
-                { label: "Equipment Marketing", href: "#connect" },
+                { label: "Sell Your Crane", href: "/#connect" },
+                { label: "Consignment Support", href: "/#connect" },
+                { label: "Fleet Solutions", href: "/#fleet-solutions" },
+                { label: "Equipment Marketing", href: "/#connect" },
               ].map((link) => (
                 <li key={link.label}>
                   <a href={link.href} className="text-sm text-slate-400 transition-colors hover:text-[#c9a227]">
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="mb-4 text-xs font-bold uppercase text-white">
+              Resources
+            </h4>
+            <ul className="space-y-2.5">
+              {[
+                { label: "Blog", href: "/blog" },
+                { label: "Seller Guides", href: "/blog" },
+                { label: "Auction Insights", href: "/blog" },
+                { label: "Buyer Resources", href: "/blog" },
+              ].map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="text-sm text-slate-400 transition-colors hover:text-[#c9a227]"
+                  >
                     {link.label}
                   </a>
                 </li>

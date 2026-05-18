@@ -160,3 +160,36 @@ h1, h2, h3, h4, h5, h6,
 [class*="font-bold"] {
   font-family: 'Chakra Petch', sans-serif !important;
 }
+
+.blog-prose p {
+  margin-top: 1rem;
+  color: #475569;
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+.blog-prose h2 {
+  margin-top: 2.25rem;
+  color: #101827;
+  font-size: 1.85rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.blog-prose h3 {
+  color: #101827;
+  font-size: 1.15rem;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.blog-prose ul {
+  margin-top: 1rem;
+  padding-left: 1.2rem;
+  color: #475569;
+}
+
+.blog-prose li {
+  margin-top: 0.75rem;
+  line-height: 1.8;
+}

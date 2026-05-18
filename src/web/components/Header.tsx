@@ -11,13 +11,13 @@ export default function Header() {
   }, []);
 
   const navLinks = [
-    { label: "Cranes For Sale", href: "#equipment" },
-    { label: "Marketplace", href: "#fleet-solutions" },
-    { label: "Crane Auctions", href: "#auctions" },
-    { label: "Sell", href: "#connect" },
-    { label: "Resources", href: "#faq" },
-    { label: "About", href: "#team" },
-    { label: "Contact", href: "#connect" },
+    { label: "Cranes For Sale", href: "/#equipment" },
+    { label: "Marketplace", href: "/#fleet-solutions" },
+    { label: "Crane Auctions", href: "/#auctions" },
+    { label: "Sell", href: "/#connect" },
+    { label: "Blog", href: "/blog" },
+    { label: "About", href: "/#team" },
+    { label: "Contact", href: "/#connect" },
   ];
 
   return (
@@ -28,7 +28,7 @@ export default function Header() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-[70px] items-center justify-between lg:h-[82px]">
-          <a href="#" className="flex min-w-0 flex-shrink-0 items-end gap-2 lg:gap-2.5">
+          <a href="/" className="flex min-w-0 flex-shrink-0 items-end gap-2 lg:gap-2.5">
             <img
               src="/Cranesauctions.png"
               alt="Jeff Martin Auctioneers"
@@ -65,13 +65,13 @@ export default function Header() {
 
           <div className="hidden items-center gap-2 lg:flex">
             <a
-              href="#connect"
+              href="/#connect"
               className="rounded border border-white/20 px-3 py-2 text-xs font-bold uppercase text-white transition-all duration-200 hover:border-[#c9a227] hover:text-[#c9a227]"
             >
               Login
             </a>
             <a
-              href="#connect"
+              href="/#connect"
               className="rounded bg-[#c9a227] px-3 py-2 text-xs font-bold uppercase text-[#101827] transition-all duration-200 hover:bg-[#b8911f]"
             >
               Sell Equipment
@@ -103,13 +103,13 @@ export default function Header() {
             ))}
             <div className="mt-4 flex flex-col gap-2">
               <a
-                href="#connect"
+                href="/#connect"
                 className="w-full rounded text-center py-2.5 text-sm font-semibold uppercase text-[#c9a227] border border-[#c9a227]"
               >
                 Login
               </a>
               <a
-                href="#connect"
+                href="/#connect"
                 className="w-full rounded bg-[#c9a227] py-2.5 text-center text-sm font-semibold uppercase text-[#101827]"
               >
                 Sell Equipment

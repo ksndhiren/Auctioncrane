@@ -1,25 +1,30 @@
 import { useState } from "react";
 
-const faqs = [
+export const faqs = [
   {
-    q: "How does the crane marketplace work?",
-    a: "Jeff Martin Auctioneers connects buyers and sellers through direct inventory listings and crane auctions.",
+    question: "How does the crane marketplace work?",
+    answer:
+      "Jeff Martin Auctioneers connects buyers and sellers through direct inventory listings and crane auctions.",
   },
   {
-    q: "Can I buy cranes directly from sellers?",
-    a: "Yes. Buyers can explore both direct inventory and upcoming auction opportunities.",
+    question: "Can I buy cranes directly from sellers?",
+    answer:
+      "Yes. Buyers can explore both direct inventory and upcoming auction opportunities.",
   },
   {
-    q: "Can I sell used cranes through the platform?",
-    a: "Yes. Sellers can list used cranes and heavy equipment through the marketplace.",
+    question: "Can I sell used cranes through the platform?",
+    answer:
+      "Yes. Sellers can list used cranes and heavy equipment through the marketplace.",
   },
   {
-    q: "Do you support dealer inventory listings?",
-    a: "Yes. We support dealer inventory, fleet equipment, and contractor listings.",
+    question: "Do you support dealer inventory listings?",
+    answer:
+      "Yes. We support dealer inventory, fleet equipment, and contractor listings.",
   },
   {
-    q: "How do crane auctions work?",
-    a: "Buyers can review upcoming events, explore inventory, and participate in auction opportunities alongside direct listings.",
+    question: "How do crane auctions work?",
+    answer:
+      "Buyers can review upcoming events, explore inventory, and participate in auction opportunities alongside direct listings.",
   },
 ];
 
@@ -40,7 +45,7 @@ export default function ContactFAQ() {
             <div className="mt-8 space-y-3">
               {faqs.map((faq, index) => (
                 <div
-                  key={faq.q}
+                  key={faq.question}
                   className="overflow-hidden rounded-lg border border-slate-200 bg-white"
                 >
                   <button
@@ -48,7 +53,7 @@ export default function ContactFAQ() {
                     className="flex w-full items-start justify-between gap-3 p-5 text-left transition-colors hover:bg-slate-50"
                   >
                     <span className="text-sm font-bold leading-snug text-[#0f1725]">
-                      {faq.q}
+                      {faq.question}
                     </span>
                     <span
                       className={`mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full border-2 border-[#c9a227] transition-transform ${
@@ -62,7 +67,7 @@ export default function ContactFAQ() {
                   </button>
                   {open === index ? (
                     <div className="border-t border-slate-100 px-5 pb-5 text-sm leading-relaxed text-slate-600">
-                      <p className="pt-3">{faq.a}</p>
+                      <p className="pt-3">{faq.answer}</p>
                     </div>
                   ) : null}
                 </div>
