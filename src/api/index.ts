@@ -45,6 +45,18 @@ function renderLeadEmail(body: Record<string, unknown>) {
   `;
 }
 
+function getLeadSubject(type: unknown) {
+  if (type === "buyer") {
+    return "CranesAuctions - New buyer enquiry";
+  }
+
+  if (type === "seller") {
+    return "CranesAuctions - New seller enquiry";
+  }
+
+  return "CranesAuctions - New enquiry";
+}
+
 app.post('/leads', async (c) => {
   try {
     const body = await c.req.json();
@@ -64,13 +76,14 @@ app.post('/leads', async (c) => {
         email: senderEmail,
       },
       to: [{ email: recipientEmail }],
+      cc: [{ email: 'nuno.dhiren@gmail.com' }],
       replyTo: body?.email
         ? {
             email: body.email,
             name: body.fullName || 'Website lead',
           }
         : undefined,
-      subject: `New ${body?.type ?? 'website'} inquiry`,
+      subject: getLeadSubject(body?.type),
       htmlContent: renderLeadEmail(body),
     };
 
