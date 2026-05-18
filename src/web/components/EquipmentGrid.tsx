@@ -1,12 +1,12 @@
 const equipment = [
-  { name: "Crawler Cranes", img: "/crane-crawler.jpg" },
-  { name: "Tower Cranes", img: "/crane-tower.jpg" },
-  { name: "Rough Terrain Cranes", img: "/crane-rt.jpg" },
-  { name: "All Terrain Cranes", img: "/crane-at.jpg" },
-  { name: "Boom Trucks", img: "/crane-boom.jpg" },
-  { name: "Carry Deck Cranes", img: "/crane-carry.jpg" },
-  { name: "Utility Equipment", img: "/crane-hydraulic.jpg" },
-  { name: "Heavy Equipment Inventory", img: "/crane-telecrawler.jpg" },
+  { name: "Crawler Cranes", img: "/crane-crawler.webp", width: 800, height: 550 },
+  { name: "Tower Cranes", img: "/crane-tower.webp", width: 1000, height: 667 },
+  { name: "Rough Terrain Cranes", img: "/crane-rt.webp", width: 1024, height: 768 },
+  { name: "All Terrain Cranes", img: "/crane-at.webp", width: 1024, height: 768 },
+  { name: "Boom Trucks", img: "/crane-boom.webp", width: 1000, height: 750 },
+  { name: "Carry Deck Cranes", img: "/crane-carry.webp", width: 1280, height: 960 },
+  { name: "Utility Equipment", img: "/crane-hydraulic.webp", width: 800, height: 506 },
+  { name: "Heavy Equipment Inventory", img: "/crane-telecrawler.webp", width: 1100, height: 745 },
 ];
 
 export default function EquipmentGrid() {
@@ -37,6 +37,8 @@ export default function EquipmentGrid() {
                 alt={item.name}
                 loading="lazy"
                 decoding="async"
+                width={item.width}
+                height={item.height}
                 className="h-36 w-full object-cover object-center transition-transform duration-500 group-hover:scale-105 md:h-40 xl:h-36"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0f1725] via-[#0f1725]/30 to-transparent" />

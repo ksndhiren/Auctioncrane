@@ -2,7 +2,9 @@ const teamMembers = [
   {
     name: "Bryan Carr",
     role: "National Sales Director - Crane & Heavy Transport",
-    image: "/bryan-carr-team.jpg",
+    image: "/bryan-carr-team.webp",
+    width: 1000,
+    height: 1000,
     bio: "Bryan Carr has been active in the heavy lift industry since 1992, helping sellers position underutilized equipment and guiding buyers toward trusted inventory opportunities.",
     phone: "+16015086207",
     email: "bryan.c@jeffmartinauctioneers.com",
@@ -10,7 +12,9 @@ const teamMembers = [
   {
     name: "Keith Willett",
     role: "Industry Sales & Management Specialist",
-    image: "/keith-willett.jpg",
+    image: "/keith-willett.webp",
+    width: 1000,
+    height: 1000,
     bio: "Keith Willett brings decades of experience across construction equipment, trucking, sales leadership, and commercial account support.",
     phone: "+16014506200",
     email: "keith.w@jeffmartinauctioneers.com",
@@ -18,7 +22,9 @@ const teamMembers = [
   {
     name: "Chip Jordan",
     role: "Heavy Lift & Rigging Operations Specialist",
-    image: "/chip-jordan.jpg",
+    image: "/chip-jordan.webp",
+    width: 1000,
+    height: 1000,
     bio: "Chip Jordan adds deep crane, rigging, and field operations expertise for heavy lift projects, fleet opportunities, and technical equipment needs.",
     phone: "+16625495614",
     email: "chip.j@jeffmartinauctioneers.com",
@@ -54,6 +60,8 @@ export default function TeamSection() {
                       alt={member.name}
                       loading="lazy"
                       decoding="async"
+                      width={member.width}
+                      height={member.height}
                       className="h-full w-full object-cover object-top"
                     />
                   </div>

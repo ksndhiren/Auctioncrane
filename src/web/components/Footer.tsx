@@ -9,6 +9,8 @@ export default function Footer() {
             <img
               src="/Cranesauctions.png"
               alt="Jeff Martin Auctioneers"
+              width={1920}
+              height={680}
               className="h-auto w-[150px] max-w-full"
               loading="lazy"
               decoding="async"
@@ -119,6 +121,8 @@ export default function Footer() {
               <img
                 src="/jma-logo-new.png"
                 alt="Jeff Martin Auctioneers Inc"
+                width={1216}
+                height={730}
                 className="h-10 w-auto brightness-0 invert"
                 loading="lazy"
                 decoding="async"

@@ -1,22 +1,30 @@
 const locations = [
   {
     name: "Texas",
-    image: "/crane-at.jpg",
+    image: "/crane-at.webp",
+    width: 1024,
+    height: 768,
     blurb: "Gulf Coast and industrial corridor inventory.",
   },
   {
     name: "Florida",
-    image: "/crane-boom.jpg",
+    image: "/crane-boom.webp",
+    width: 1000,
+    height: 750,
     blurb: "Dealer inventory and transportation assets.",
   },
   {
     name: "Georgia",
-    image: "/crane-rt.jpg",
+    image: "/crane-rt.webp",
+    width: 1024,
+    height: 768,
     blurb: "Regional crane and heavy equipment listings.",
   },
   {
     name: "Gulf South",
-    image: "/crane-carry.jpg",
+    image: "/crane-carry.webp",
+    width: 1280,
+    height: 960,
     blurb: "Heavy transport and project support equipment.",
   },
 ];
@@ -49,6 +57,8 @@ export default function InventoryByLocation() {
                 alt={location.name}
                 loading="lazy"
                 decoding="async"
+                width={location.width}
+                height={location.height}
                 className="h-36 w-full object-cover transition duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0f1725] via-[#0f1725]/35 to-transparent" />

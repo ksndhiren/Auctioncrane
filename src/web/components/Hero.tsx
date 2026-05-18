@@ -2,10 +2,13 @@ export default function Hero() {
   return (
     <section className="relative flex min-h-[720px] items-center overflow-hidden bg-[#101827] pt-20 lg:min-h-[760px]">
       <img
-        src="/hero.jpg"
+        src="/hero.webp"
         alt=""
         aria-hidden="true"
         fetchPriority="high"
+        width={1400}
+        height={594}
+        decoding="async"
         className="absolute inset-0 h-full w-full object-cover object-center"
       />
       <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(10,15,27,.92)_0%,rgba(10,15,27,.82)_38%,rgba(10,15,27,.45)_70%,rgba(10,15,27,.35)_100%)]" />

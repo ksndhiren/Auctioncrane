@@ -8,7 +8,9 @@ const events = [
     description:
       "Current live JMA crane event featuring transport and support equipment inventory from across the United States.",
     featured: true,
-    image: "/crane-crawler.jpg",
+    image: "/crane-crawler.webp",
+    width: 800,
+    height: 550,
   },
   {
     date: "May 15, 2026",
@@ -19,7 +21,9 @@ const events = [
     description:
       "Bidding is open on this Mississippi public auction with commercial equipment, transportation assets, and heavy inventory.",
     featured: false,
-    image: "/crane-boom.jpg",
+    image: "/crane-boom.webp",
+    width: 1000,
+    height: 750,
   },
   {
     date: "May 16, 2026",
@@ -30,7 +34,9 @@ const events = [
     description:
       "A fresh regional consignment event on the JMA calendar with inventory still being added daily.",
     featured: false,
-    image: "/crane-at.jpg",
+    image: "/crane-at.webp",
+    width: 1024,
+    height: 768,
   },
 ];
 
@@ -80,6 +86,8 @@ export default function UpcomingAuctions() {
                   alt={event.title}
                   loading="lazy"
                   decoding="async"
+                  width={event.width}
+                  height={event.height}
                   className="h-full w-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#101827] via-[#101827]/55 to-transparent" />

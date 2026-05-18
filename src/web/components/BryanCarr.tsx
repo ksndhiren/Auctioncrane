@@ -23,8 +23,10 @@ export default function BryanCarr() {
           <div className="relative">
             <div className="relative overflow-hidden rounded-xl shadow-2xl">
               <img
-                src="/bryan-carr.jpg"
+                src="/bryan-carr.webp"
                 alt="Bryan Carr, National Sales Director, Crane & Heavy Transport"
+                width={200}
+                height={200}
                 className="w-full object-cover object-top"
                 style={{ maxHeight: "520px" }}
                 loading="lazy"

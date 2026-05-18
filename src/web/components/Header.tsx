@@ -6,7 +6,7 @@ export default function Header() {
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
-    window.addEventListener("scroll", onScroll);
+    window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
@@ -32,6 +32,9 @@ export default function Header() {
             <img
               src="/Cranesauctions.png"
               alt="Jeff Martin Auctioneers"
+              width={1920}
+              height={680}
+              fetchPriority="high"
               className="h-auto w-[110px] max-w-full lg:w-[145px]"
             />
             <span className="flex min-w-0 items-end gap-1.5 pb-1 text-[7px] font-semibold uppercase tracking-[0.12em] text-white/70 lg:gap-2 lg:pb-1.5 lg:text-[8px]">
@@ -39,6 +42,8 @@ export default function Header() {
               <img
                 src="/jma-logo-new.png"
                 alt="Jeff Martin Auctioneers Inc"
+                width={1216}
+                height={730}
                 className="h-7 w-auto brightness-0 invert lg:h-8"
                 loading="lazy"
                 decoding="async"

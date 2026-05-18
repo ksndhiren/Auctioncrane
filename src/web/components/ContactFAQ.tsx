@@ -73,11 +73,13 @@ export default function ContactFAQ() {
           <div className="overflow-hidden rounded-lg bg-[#101827] text-white shadow-[0_22px_60px_rgba(15,23,37,0.18)]">
             <div className="relative">
               <img
-                src="/hero.jpg"
+                src="/hero.webp"
                 alt=""
                 aria-hidden="true"
                 loading="lazy"
                 decoding="async"
+                width={1400}
+                height={594}
                 className="min-h-[520px] w-full object-cover"
               />
               <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(10,15,27,.92)_0%,rgba(10,15,27,.82)_52%,rgba(10,15,27,.42)_100%)]" />
