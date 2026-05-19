@@ -6,7 +6,7 @@ const post: BlogPost = {
     title: "How to Sell a Used Crane at Auction",
     description: "A practical guide for crane owners and fleet managers on when auction is the right channel, what buyers want to see, and how to prepare a used crane for a smoother sale.",
     publishedAt: "2026-05-19",
-    author: "CranesAuctions Editorial Team",
+    author: "Jeff Martin Auctioneers Editorial Team",
     readTime: "8 min read",
     category: "Selling Guides",
     tags: [
@@ -144,7 +144,7 @@ const post: BlogPost = {
     ],
     cta: {
       title: "Need help listing a used crane for auction?",
-      body: "Talk with CranesAuctions about your equipment, documents, and sale goals. We can help you decide whether auction is the right channel and what you need to prepare before listing.",
+      body: "Talk with Jeff Martin Auctioneers about your equipment, documents, and sale goals. We can help you decide whether auction is the right channel and what you need to prepare before listing.",
       buttonLabel: "Request a Valuation",
       buttonHref: "/?lead=seller#connect",
     },

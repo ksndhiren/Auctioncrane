@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import StructuredData from "@/components/StructuredData";
@@ -10,6 +12,7 @@ type BlogPostPageProps = {
 
 export default function BlogPostPage({ slug }: BlogPostPageProps) {
   const post = getBlogPostBySlug(slug);
+  const [openFaq, setOpenFaq] = useState<number | null>(0);
 
   if (!post) {
     return (
@@ -105,19 +108,18 @@ export default function BlogPostPage({ slug }: BlogPostPageProps) {
                         loading="lazy"
                       />
                       {section.image.creditName ? (
-                        <figcaption className="px-4 py-3 text-sm text-slate-500">
-                          Image:{" "}
+                        <figcaption className="px-4 py-3 text-xs uppercase tracking-[0.14em] text-slate-400">
                           {section.image.creditUrl ? (
                             <a
                               href={section.image.creditUrl}
                               target="_blank"
                               rel="noreferrer"
-                              className="font-medium text-slate-600 underline-offset-2 hover:underline"
+                              className="font-medium text-slate-500 underline-offset-2 hover:text-slate-700 hover:underline"
                             >
-                              {section.image.creditName}
+                              Photo by {section.image.creditName}
                             </a>
                           ) : (
-                            section.image.creditName
+                            `Photo by ${section.image.creditName}`
                           )}
                         </figcaption>
                       ) : null}
@@ -145,13 +147,48 @@ export default function BlogPostPage({ slug }: BlogPostPageProps) {
                 <section className="mt-12">
                   <h2>Frequently asked questions</h2>
                   <div className="mt-6 space-y-4">
-                    {post.faq.map((item) => (
+                    {post.faq.map((item, index) => (
                       <div
                         key={item.question}
-                        className="rounded-2xl border border-slate-200 bg-slate-50 p-5"
+                        className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-50"
                       >
-                        <h3>{item.question}</h3>
-                        <p>{item.answer}</p>
+                        <button
+                          type="button"
+                          onClick={() =>
+                            setOpenFaq(openFaq === index ? null : index)
+                          }
+                          className="flex w-full items-start justify-between gap-3 p-5 text-left transition-colors hover:bg-slate-100"
+                        >
+                          <h3 className="m-0 text-lg font-bold text-[#101827]">
+                            {item.question}
+                          </h3>
+                          <span
+                            className={`mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full border-2 border-[#c9a227] transition-transform ${
+                              openFaq === index ? "rotate-45" : ""
+                            }`}
+                          >
+                            <svg
+                              className="h-3 w-3 text-[#c9a227]"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={3}
+                                d="M12 4v16m8-8H4"
+                              />
+                            </svg>
+                          </span>
+                        </button>
+                        {openFaq === index ? (
+                          <div className="border-t border-slate-200 px-5 pb-5 pt-4">
+                            <p className="m-0 text-base leading-7 text-slate-600">
+                              {item.answer}
+                            </p>
+                          </div>
+                        ) : null}
                       </div>
                     ))}
                   </div>
