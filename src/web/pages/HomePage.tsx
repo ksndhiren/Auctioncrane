@@ -13,7 +13,7 @@ import Testimonials from "@/components/Testimonials";
 import UpcomingAuctions from "@/components/UpcomingAuctions";
 import WhyUs from "@/components/WhyUs";
 import StructuredData from "@/components/StructuredData";
-import { getFeaturedBlogPosts } from "@/lib/blog";
+import { getBlogPath, getFeaturedBlogPosts } from "@/lib/blog";
 import {
   getBreadcrumbSchema,
   getFaqSchema,
@@ -78,13 +78,13 @@ export default function HomePage() {
                 {featuredPosts.map((post) => (
                   <a
                     key={post.slug}
-                    href={`/blog/${post.slug}`}
+                    href={getBlogPath(post)}
                     className="group overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition-transform hover:-translate-y-1"
                   >
                     <div className="aspect-[16/9] overflow-hidden">
                       <img
                         src={post.heroImage}
-                        alt={post.title}
+                        alt={post.heroImageAlt || post.title}
                         className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                         loading="lazy"
                       />

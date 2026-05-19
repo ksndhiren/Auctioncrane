@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import StructuredData from "@/components/StructuredData";
-import { getBlogPostBySlug } from "@/lib/blog";
+import { getBlogPath, getBlogPostBySlug } from "@/lib/blog";
 import { getBlogPostingSchema, getBreadcrumbSchema } from "@/lib/schema";
 
 type BlogPostPageProps = {
@@ -43,7 +43,7 @@ export default function BlogPostPage({ slug }: BlogPostPageProps) {
       getBreadcrumbSchema([
         { name: "Home", path: "/" },
         { name: "Blog", path: "/blog" },
-        { name: post.title, path: `/blog/${post.slug}` },
+        { name: post.title, path: getBlogPath(post) },
       ]),
       getBlogPostingSchema(post),
     ],
@@ -66,7 +66,7 @@ export default function BlogPostPage({ slug }: BlogPostPageProps) {
             <div className="aspect-[16/9] overflow-hidden">
               <img
                 src={post.heroImage}
-                alt={post.title}
+                alt={post.heroImageAlt || post.title}
                 className="h-full w-full object-cover"
               />
             </div>
@@ -96,6 +96,33 @@ export default function BlogPostPage({ slug }: BlogPostPageProps) {
               {post.sections.map((section) => (
                 <section key={section.heading} className="mt-10">
                   <h2>{section.heading}</h2>
+                  {section.image ? (
+                    <figure className="my-6 overflow-hidden rounded-[1.5rem] border border-slate-200 bg-slate-50">
+                      <img
+                        src={section.image.src}
+                        alt={section.image.alt}
+                        className="h-full w-full object-cover"
+                        loading="lazy"
+                      />
+                      {section.image.creditName ? (
+                        <figcaption className="px-4 py-3 text-sm text-slate-500">
+                          Image:{" "}
+                          {section.image.creditUrl ? (
+                            <a
+                              href={section.image.creditUrl}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="font-medium text-slate-600 underline-offset-2 hover:underline"
+                            >
+                              {section.image.creditName}
+                            </a>
+                          ) : (
+                            section.image.creditName
+                          )}
+                        </figcaption>
+                      ) : null}
+                    </figure>
+                  ) : null}
                   {section.paragraphs.map((paragraph) => (
                     <p key={paragraph}>{paragraph}</p>
                   ))}

@@ -11,6 +11,9 @@ export default function App() {
       <Switch>
         <Route path="/" component={HomePage} />
         <Route path="/blog" component={BlogIndexPage} />
+        <Route path="/blog/:category/:slug">
+          {(params) => <BlogPostPage slug={params.slug} />}
+        </Route>
         <Route path="/blog/:slug">
           {(params) => <BlogPostPage slug={params.slug} />}
         </Route>

@@ -1,8 +1,16 @@
+export type BlogImage = {
+  src: string;
+  alt: string;
+  creditName?: string;
+  creditUrl?: string;
+};
+
 export type BlogSection = {
   heading: string;
   paragraphs: string[];
   bullets?: string[];
   callout?: string;
+  image?: BlogImage;
 };
 
 export type BlogFaq = {
@@ -12,6 +20,7 @@ export type BlogFaq = {
 
 export type BlogPost = {
   slug: string;
+  categorySlug?: string;
   title: string;
   description: string;
   publishedAt: string;
@@ -21,6 +30,9 @@ export type BlogPost = {
   category: string;
   tags: string[];
   heroImage: string;
+  heroImageAlt?: string;
+  heroImageCreditName?: string;
+  heroImageCreditUrl?: string;
   featured: boolean;
   seoTitle: string;
   seoDescription: string;

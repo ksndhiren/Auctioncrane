@@ -1,4 +1,5 @@
 import type { BlogPost } from "@/types/blog";
+import { getBlogPath } from "@/lib/blog";
 
 export const SITE_URL = "https://www.cranesauctions.com";
 export const SITE_NAME = "CranesAuctions";
@@ -105,12 +106,16 @@ export function getFaqSchema(items: { question: string; answer: string }[]) {
 }
 
 export function getBlogPostingSchema(post: BlogPost) {
+  const heroImageUrl = post.heroImage.startsWith("http")
+    ? post.heroImage
+    : `${SITE_URL}${post.heroImage}`;
+
   return {
     "@type": "BlogPosting",
     headline: post.title,
     description: post.description,
-    mainEntityOfPage: `${SITE_URL}/blog/${post.slug}`,
-    image: [`${SITE_URL}${post.heroImage}`],
+    mainEntityOfPage: `${SITE_URL}${getBlogPath(post)}`,
+    image: [heroImageUrl],
     author: {
       "@type": "Organization",
       name: post.author,

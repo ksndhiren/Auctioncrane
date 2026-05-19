@@ -24,3 +24,15 @@ export function getFeaturedBlogPosts() {
 export function getBlogPostBySlug(slug: string) {
   return posts.find((post) => post.slug === slug);
 }
+
+export function getBlogPath(post: BlogPost) {
+  const categorySlug = post.categorySlug || slugify(post.category);
+  return categorySlug ? `/blog/${categorySlug}/${post.slug}` : `/blog/${post.slug}`;
+}
+
+function slugify(value: string) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}

@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import StructuredData from "@/components/StructuredData";
-import { getAllBlogPosts } from "@/lib/blog";
+import { getAllBlogPosts, getBlogPath } from "@/lib/blog";
 import { getBreadcrumbSchema } from "@/lib/schema";
 
 export default function BlogIndexPage() {
@@ -40,10 +40,10 @@ export default function BlogIndexPage() {
                 key={post.slug}
                 className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-sm"
               >
-                <a href={`/blog/${post.slug}`} className="block aspect-[16/9]">
+                <a href={getBlogPath(post)} className="block aspect-[16/9]">
                   <img
                     src={post.heroImage}
-                    alt={post.title}
+                    alt={post.heroImageAlt || post.title}
                     className="h-full w-full object-cover"
                     loading="lazy"
                   />
@@ -57,13 +57,13 @@ export default function BlogIndexPage() {
                     <span>{post.readTime}</span>
                   </div>
                   <h2 className="mt-5 text-2xl font-black uppercase leading-tight text-[#101827]">
-                    <a href={`/blog/${post.slug}`}>{post.title}</a>
+                    <a href={getBlogPath(post)}>{post.title}</a>
                   </h2>
                   <p className="mt-4 text-base leading-7 text-slate-600">
                     {post.description}
                   </p>
                   <a
-                    href={`/blog/${post.slug}`}
+                    href={getBlogPath(post)}
                     className="mt-6 inline-flex items-center text-sm font-bold uppercase tracking-[0.14em] text-[#c9a227]"
                   >
                     Read article

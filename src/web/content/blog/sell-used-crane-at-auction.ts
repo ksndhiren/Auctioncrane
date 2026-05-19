@@ -1,98 +1,153 @@
 import type { BlogPost } from "@/types/blog";
 
 const post: BlogPost = {
-  slug: "sell-used-crane-at-auction",
-  title: "How To Sell a Used Crane at Auction Without Leaving Money on the Table",
-  description:
-    "A practical guide for crane owners and fleet managers preparing equipment for auction, buyer scrutiny, and stronger sale outcomes.",
-  publishedAt: "2026-05-18",
-  author: "CranesAuctions Editorial Team",
-  readTime: "8 min read",
-  category: "Seller Guides",
-  tags: ["crane auctions", "sell used crane", "fleet disposition"],
-  heroImage: "/hero.webp",
-  featured: true,
-  seoTitle: "How To Sell a Used Crane at Auction | CranesAuctions",
-  seoDescription:
-    "Learn how to prepare a used crane for auction, attract serious buyers, and improve your sale outcome with practical auction-readiness steps.",
-  intro: [
-    "Selling a crane is rarely just about listing a machine and waiting for offers. Owners need the right auction format, a credible presentation package, and a clear understanding of how buyers evaluate condition, service history, and timing.",
-    "Whether you are rotating out aging equipment, freeing up capital, or moving surplus assets after a project cycle, the strongest sale outcomes usually come from good preparation rather than last-minute pricing decisions.",
-  ],
-  sections: [
-    {
-      heading: "Start with a realistic sale strategy",
-      paragraphs: [
-        "Before you send a crane to auction, define what success looks like. Some sellers want a fast exit, while others are willing to wait for a stronger buyer pool or a more specialized event.",
-        "Your sale strategy should reflect the crane type, age, maintenance quality, regional demand, and how urgently you need to convert the asset into cash.",
-      ],
-      bullets: [
-        "Decide whether timing or price is the priority.",
-        "Match the crane type to the right buyer audience.",
-        "Compare auction, direct sale, and consignment based on speed and reach.",
-      ],
+    slug: "sell-used-crane-at-auction",
+    categorySlug: "selling-guides",
+    title: "How to Sell a Used Crane at Auction",
+    description: "A practical guide for crane owners and fleet managers on when auction is the right channel, what buyers want to see, and how to prepare a used crane for a smoother sale.",
+    publishedAt: "2026-05-19",
+    author: "CranesAuctions Editorial Team",
+    readTime: "8 min read",
+    category: "Selling Guides",
+    tags: [
+      "used crane sales",
+      "crane auction process",
+      "seller checklist",
+      "equipment valuation",
+      "used crane auction",
+    ],
+    heroImage: "https://images.pexels.com/photos/29502221/pexels-photo-29502221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    heroImageAlt: "A 40 ton ACE rough terrain crane parked in an industrial yard in Faridabad, India.",
+    heroImageCreditName: "Action Construction  Equipment Ltd. - ACE",
+    heroImageCreditUrl: "https://www.pexels.com/photo/40-ton-ace-rough-terrain-crane-in-faridabad-yard-29502221/",
+    featured: false,
+    seoTitle: "How to Sell a Used Crane at Auction | Seller Guide",
+    seoDescription: "Learn how to sell used crane at auction with practical tips on documents, photos, inspection prep, common mistakes, and what to ask an auction partner before listing.",
+    intro: [
+      "If you need a realistic way to move a crane, auction can be an efficient channel, especially when time, storage, or fleet changes make a private sale less practical. The right auction partner can help you reach serious buyers without forcing you to manage every part of the sales process yourself.",
+      "That said, auction results depend heavily on preparation. Clear paperwork, honest condition details, strong photos, and a well-planned listing all help buyers bid with confidence and reduce delays once the crane is live.",
+    ],
+    sections: [
+      {
+        heading: "When auction is the right selling channel",
+        paragraphs: [
+          "Auction often makes sense when you want to sell a used crane at auction without spending months fielding inquiries, negotiating offers, and arranging inspections on your own. It can be a strong option for fleet managers handling surplus equipment, dealers rotating inventory, and owners who need a structured sale timeline.",
+          "It is also worth considering when the crane has a broad buyer base, when the market is active for your equipment type, or when you want competitive bidding to help determine the market value. For some assets, a used crane auction can create urgency and visibility that a private listing may not.",
+          "Auction is not always the best path. If a crane is highly specialized, has unresolved title or ownership issues, or needs major repairs that are difficult to present clearly, you may need more documentation or a different sales strategy before listing. A good auction partner will help you judge that realistically rather than overstate the outcome.",
+        ],
+        callout: "Auction works best when the crane is marketable, the paperwork is ready, and the seller wants a defined process rather than a long negotiation cycle.",
+      },
+      {
+        heading: "Information buyers expect before they bid",
+        paragraphs: [
+          "Buyers at a crane auction want enough detail to make a confident decision before the bidding starts. If that information is missing, they may bid cautiously or skip the lot altogether. The goal is not to oversell the crane; it is to present the facts clearly so the market can respond.",
+          "At a minimum, buyers expect the make, model, year, serial number, capacity, boom configuration, hours, current location, and any major attachments or accessories included in the sale. If applicable, include inspection status, service history, ownership details, and whether the crane is operational, idle, or partially disassembled.",
+          "Supporting documents also matter. Title or ownership records, maintenance logs, inspection reports, and recent repair invoices can help reduce uncertainty. If the crane has known defects, list them plainly. Buyers usually trust a seller who is direct about condition more than one who leaves gaps in the listing.",
+        ],
+        bullets: [
+          "Make, model, year, and serial number",
+          "Rated capacity and configuration",
+          "Operating hours or usage estimate",
+          "Maintenance and inspection records",
+          "Ownership, title, or lien status",
+          "Known defects, repairs, or missing components",
+          "Included attachments, blocks, rigging, or transport items",
+        ],
+        image: {
+          src: "https://images.pexels.com/photos/19091513/pexels-photo-19091513.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          alt: "Close-up of a yellow industrial crane with openwork design against a cloudy blue sky.",
+          creditName: "\u041c\u0438\u0445\u0430\u0438\u043b \u041a\u0440\u0430\u043c\u043e\u0440",
+          creditUrl: "https://www.pexels.com/photo/rusty-yellow-crane-19091513/",
+        },
+      },
+      {
+        heading: "How to prepare a crane for listing and inspection",
+        paragraphs: [
+          "Preparation is one of the most important parts of the crane resale process. Even if you are not making repairs, a clean, organized crane photographs better, inspects better, and is easier for buyers to evaluate. Simple steps can improve how the asset is perceived without turning the process into a major overhaul.",
+          "Start by cleaning the crane so important components are visible. Remove loose debris, wash heavy grime from the cab, boom, undercarriage, and counterweight areas, and make sure ID plates and hour meters can be read in photos. If the crane will be inspected in person, make the site accessible and safe for buyers, inspectors, or transport crews.",
+          "Create a basic equipment auction checklist before the listing goes live. Verify all serial numbers, gather documents, test functionality where possible, photograph all major angles, and note any missing parts. If the crane cannot be fully operated, explain why and document what is known about its condition. Clear, accurate presentation helps avoid disputes later in the sale.",
+        ],
+        bullets: [
+          "Clean the machine so key components are visible",
+          "Photograph the cab, boom, tires or tracks, counterweights, and ID plates",
+          "Confirm serial numbers and asset records",
+          "Gather maintenance, repair, and inspection paperwork",
+          "Test basic functions if safe and practical",
+          "Note missing parts, leaks, damage, or non-operational systems",
+          "Prepare the site for inspection and potential removal",
+        ],
+        callout: "A well-prepared listing does not guarantee a higher bid, but it usually helps serious buyers bid with more confidence.",
+        image: {
+          src: "https://images.pexels.com/photos/29502221/pexels-photo-29502221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          alt: "A 40 ton ACE rough terrain crane parked in an industrial yard in Faridabad, India.",
+          creditName: "Action Construction  Equipment Ltd. - ACE",
+          creditUrl: "https://www.pexels.com/photo/40-ton-ace-rough-terrain-crane-in-faridabad-yard-29502221/",
+        },
+      },
+      {
+        heading: "Common mistakes that reduce auction performance",
+        paragraphs: [
+          "One of the biggest mistakes sellers make is waiting too long to gather information. If the listing goes live before documents, photos, or condition notes are ready, the auction team may have to revise details later, which can slow buyer interest and create confusion. A rushed listing often looks less credible than a complete one.",
+          "Another common issue is overestimating condition or omitting defects. Buyers will inspect carefully, and if the listing sounds too polished, they may assume there is a catch. Being specific about wear, repairs, and limitations usually supports a better long-term result than vague marketing language.",
+          "A third mistake is ignoring logistics. If the crane is difficult to access, the title is not ready, or removal terms are unclear, buyers may discount their bids because of the extra risk. The easier you make the process for the buyer, the less friction there is between interest and final sale.",
+        ],
+        bullets: [
+          "Listing before documents and photos are complete",
+          "Hiding damage, wear, or non-working components",
+          "Using vague or inconsistent equipment descriptions",
+          "Leaving title, lien, or ownership issues unresolved",
+          "Failing to plan for inspection access or removal",
+          "Assuming auction pricing will replace realistic market expectations",
+        ],
+      },
+      {
+        heading: "What to ask an auction partner before listing",
+        paragraphs: [
+          "Before you commit, ask how the auction partner handles seller intake, valuation guidance, listing preparation, and buyer outreach. You want a process that is clear from the start, not one that leaves you guessing once the crane is already scheduled for sale. The best partners can explain their steps in plain language and tell you what is needed from you to avoid delay.",
+          "Ask how they evaluate equipment condition, what kind of photos and documents they require, how the auction timeline works, and how they help present the lot to qualified buyers. It is also smart to ask about fees, reserve strategy, payment timing, and removal terms so there are no surprises after the auction closes.",
+          "If the crane is part of a larger fleet, ask whether the partner can support multiple assets, replacement cycles, or a staged sale plan. A knowledgeable marketplace team should understand both the commercial side of selling and the practical side of moving heavy equipment.",
+        ],
+        bullets: [
+          "What documents and photos are required before listing?",
+          "How is equipment condition presented to buyers?",
+          "What fees, commissions, or seller costs apply?",
+          "How are reserves, payment, and pickup handled?",
+          "How long does the auction process usually take?",
+          "Can they support multiple cranes or fleet disposals?",
+        ],
+      },
+      {
+        heading: "Closing CTA for valuation or listing support",
+        paragraphs: [
+          "If you are ready to sell crane fast, the best next step is to talk through the asset with a team that understands crane condition, buyer expectations, and auction timing. A realistic review can help you decide whether a used crane auction is the right fit and what preparation is needed before listing.",
+          "Whether you are moving one crane or managing a broader equipment changeover, a structured marketplace approach can help you move forward with more clarity and fewer delays. Start with the facts, prepare the listing carefully, and let the market respond to a well-presented asset.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        question: "What is the best way to sell a used crane at auction?",
+        answer: "The best approach is to provide complete equipment details, accurate condition notes, clear photos, and all available ownership and maintenance documents before the listing goes live. That helps buyers evaluate the crane confidently and reduces delays during the auction process.",
+      },
+      {
+        question: "Do I need repairs before I can list a crane for auction?",
+        answer: "Not always. Minor cleanup and basic preparation can help, but major repairs are not always required. What matters most is presenting the crane honestly, documenting known issues, and making sure buyers understand the condition before bidding.",
+      },
+      {
+        question: "How do auction buyers judge crane value?",
+        answer: "Buyers typically look at make, model, age, capacity, operating hours, maintenance history, condition, and how easy the crane will be to remove or put into service. Market demand and similar recent sales also influence interest.",
+      },
+      {
+        question: "Can auction help me sell crane fast?",
+        answer: "It can, especially when the crane has solid documentation and the listing is prepared properly. Auction creates a defined sales timeline, but the final speed still depends on equipment type, market interest, and how complete the listing is.",
+      },
+    ],
+    cta: {
+      title: "Need help listing a used crane for auction?",
+      body: "Talk with CranesAuctions about your equipment, documents, and sale goals. We can help you decide whether auction is the right channel and what you need to prepare before listing.",
+      buttonLabel: "Request a Valuation",
+      buttonHref: "https://www.cranesauctions.com/contact",
     },
-    {
-      heading: "Prepare documentation before buyers ask for it",
-      paragraphs: [
-        "Serious buyers move faster when the paperwork is ready. Missing service records, unclear serial information, and inconsistent inspection details create hesitation and can reduce bidding momentum.",
-        "A clean equipment package helps buyers trust the listing and gives auction specialists stronger material to market the crane effectively.",
-      ],
-      bullets: [
-        "Service and maintenance history",
-        "Serial and model details",
-        "Ownership and title documents where relevant",
-        "Inspection reports or known-condition notes",
-      ],
-      callout:
-        "The goal is not to make an older crane look perfect. The goal is to make the condition transparent enough that buyers feel informed rather than uncertain.",
-    },
-    {
-      heading: "Invest in presentation quality",
-      paragraphs: [
-        "Buyers often make their first judgment from photos before they ever ask a question. Clean visuals, accurate descriptions, and clear condition notes can improve trust and draw more serious inquiries.",
-        "For crane assets, broad shots are not enough. Buyers want to understand boom condition, cab condition, undercarriage or tire state, wear points, and any attachments that affect value.",
-      ],
-      bullets: [
-        "Use current, high-resolution images.",
-        "Show wear honestly instead of hiding it.",
-        "Include close-ups of high-interest components.",
-      ],
-    },
-    {
-      heading: "Time the market instead of reacting to it",
-      paragraphs: [
-        "Auction timing matters. Regional demand, contractor buying cycles, fleet replacement windows, and major project activity all affect buyer intensity.",
-        "The right sales partner can help you understand whether your crane should move immediately or be positioned for a stronger market window.",
-      ],
-    },
-    {
-      heading: "Work with a marketplace team that understands cranes",
-      paragraphs: [
-        "General auction exposure is not always enough for specialized heavy equipment. Cranes often need a team that can explain machine value, answer technical buyer questions, and target the right audience.",
-        "That support matters even more when the seller is managing multiple assets, balancing replacement planning, or trying to reduce downtime in the disposition process.",
-      ],
-    },
-  ],
-  faq: [
-    {
-      question: "What information do buyers want before bidding on a used crane?",
-      answer:
-        "Buyers usually want model and serial details, hours or usage information, service history, condition notes, inspection information, and accurate photos of major wear areas.",
-    },
-    {
-      question: "Is auction always better than a direct sale?",
-      answer:
-        "Not always. Auction can be stronger when speed, exposure, and buyer competition matter most, while direct sale can make sense for highly specific assets with a known buyer profile.",
-    },
-  ],
-  cta: {
-    title: "Need help selling a crane or surplus equipment?",
-    body:
-      "Talk with our team about auction strategy, market timing, and how to position your equipment for serious buyers.",
-    buttonLabel: "Talk To Our Team",
-    buttonHref: "/#connect",
-  },
-};
+  };
 
 export default post;
