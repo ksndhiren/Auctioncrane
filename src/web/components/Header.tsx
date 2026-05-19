@@ -27,17 +27,17 @@ export default function Header() {
       }`}
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-[70px] items-center justify-between lg:h-[82px]">
-          <a href="/" className="flex min-w-0 flex-shrink-0 items-end gap-2 lg:gap-2.5">
+        <div className="flex h-16 items-center justify-between sm:h-[70px] lg:h-[82px]">
+          <a href="/" className="flex min-w-0 flex-shrink-0 items-end gap-2 sm:gap-2.5">
             <img
               src="/Cranesauctions.png"
               alt="Jeff Martin Auctioneers"
               width={1920}
               height={680}
               fetchPriority="high"
-              className="h-auto w-[110px] max-w-full lg:w-[145px]"
+              className="h-auto w-[96px] max-w-full sm:w-[110px] lg:w-[145px]"
             />
-            <span className="flex min-w-0 items-end gap-1.5 pb-1 text-[7px] font-semibold uppercase tracking-[0.12em] text-white/70 lg:gap-2 lg:pb-1.5 lg:text-[8px]">
+            <span className="hidden min-w-0 items-end gap-1.5 pb-1 text-[7px] font-semibold uppercase tracking-[0.12em] text-white/70 sm:flex lg:gap-2 lg:pb-1.5 lg:text-[8px]">
               <span className="whitespace-nowrap leading-none">Powered by</span>
               <img
                 src="/jma-logo-new.png"
@@ -79,7 +79,7 @@ export default function Header() {
           </div>
 
           <button
-            className="p-2 text-white lg:hidden"
+            className="rounded-md p-2.5 text-white transition hover:bg-white/5 lg:hidden"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
@@ -96,7 +96,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="block py-2.5 text-sm font-medium uppercase tracking-wide text-gray-300 hover:text-[#c9a227]"
+                className="block rounded-md px-1 py-3 text-sm font-medium uppercase tracking-wide text-gray-300 hover:text-[#c9a227]"
               >
                 {link.label}
               </a>
@@ -104,15 +104,23 @@ export default function Header() {
             <div className="mt-4 flex flex-col gap-2">
               <a
                 href="/#connect"
-                className="w-full rounded text-center py-2.5 text-sm font-semibold uppercase text-[#c9a227] border border-[#c9a227]"
+                className="w-full rounded border border-[#c9a227] py-3 text-center text-sm font-semibold uppercase text-[#c9a227]"
               >
                 Login
               </a>
               <a
                 href="/#connect"
-                className="w-full rounded bg-[#c9a227] py-2.5 text-center text-sm font-semibold uppercase text-[#101827]"
+                className="w-full rounded bg-[#c9a227] py-3 text-center text-sm font-semibold uppercase text-[#101827]"
               >
                 Sell Equipment
+              </a>
+            </div>
+            <div className="mt-5 flex items-center justify-between gap-3 rounded-lg border border-white/10 bg-white/5 px-4 py-3 text-sm text-slate-300">
+              <a href="tel:+16015086207" className="font-semibold text-white hover:text-[#c9a227]">
+                Call 601.508.6207
+              </a>
+              <a href="/#connect" className="font-semibold text-[#c9a227]">
+                Contact
               </a>
             </div>
           </div>

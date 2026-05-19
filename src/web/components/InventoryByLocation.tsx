@@ -31,22 +31,22 @@ const locations = [
 
 export default function InventoryByLocation() {
   return (
-    <section className="bg-white py-16 lg:py-20">
+    <section className="bg-white py-14 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <p className="text-sm font-bold uppercase text-[#c9a227]">
             Browse Inventory
           </p>
-          <h2 className="mt-4 text-3xl font-black tracking-tight text-[#0f1725] sm:text-4xl">
+          <h2 className="mt-3 text-2xl font-black tracking-tight text-[#0f1725] sm:mt-4 sm:text-4xl">
             Crane Inventory By Location
           </h2>
-          <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-600">
+          <p className="mx-auto mt-3 max-w-2xl text-[15px] leading-6 text-slate-600 sm:mt-4 sm:text-base sm:leading-7">
             Explore crane and heavy equipment inventory across major equipment
             markets.
           </p>
         </div>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-8 grid gap-3 sm:mt-10 sm:gap-4 sm:grid-cols-2 xl:grid-cols-4">
           {locations.map((location) => (
             <div
               key={location.name}
@@ -59,12 +59,12 @@ export default function InventoryByLocation() {
                 decoding="async"
                 width={location.width}
                 height={location.height}
-                className="h-36 w-full object-cover transition duration-500 group-hover:scale-105"
+                className="h-32 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-36"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0f1725] via-[#0f1725]/35 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 p-4">
-                <div className="text-lg font-black text-white">{location.name}</div>
-                <p className="mt-1 text-sm text-slate-200">{location.blurb}</p>
+              <div className="absolute inset-x-0 bottom-0 p-3 sm:p-4">
+                <div className="text-base font-black text-white sm:text-lg">{location.name}</div>
+                <p className="mt-1 text-[13px] text-slate-200 sm:text-sm">{location.blurb}</p>
               </div>
             </div>
           ))}

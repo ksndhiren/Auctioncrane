@@ -33,22 +33,22 @@ const stats = [
 
 export default function Testimonials() {
   return (
-    <section className="bg-[#101827] py-16 lg:py-20">
+    <section className="bg-[#101827] py-14 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl">
           <span className="text-sm font-bold uppercase text-[#c9a227]">
             Trusted By Buyers & Sellers
           </span>
-          <h2 className="mt-4 text-3xl font-black tracking-tight text-white sm:text-4xl">
+          <h2 className="mt-3 text-2xl font-black tracking-tight text-white sm:mt-4 sm:text-4xl">
             Trusted By Crane Buyers & Equipment Sellers
           </h2>
         </div>
 
-        <div className="mt-10 grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,1fr)_280px]">
+        <div className="mt-8 grid items-start gap-4 sm:mt-10 sm:gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)_minmax(0,1fr)_280px]">
           {testimonials.map((testimonial) => (
             <div
               key={testimonial.name}
-              className="flex h-full min-h-[320px] flex-col rounded-2xl border border-white/10 bg-white/5 p-5 shadow-[0_14px_40px_rgba(0,0,0,0.12)]"
+              className="flex h-full min-h-[260px] flex-col rounded-2xl border border-white/10 bg-white/5 p-4 shadow-[0_14px_40px_rgba(0,0,0,0.12)] sm:min-h-[320px] sm:p-5"
             >
               <div className="flex items-center justify-between gap-3">
                 <div className="flex gap-1">
@@ -60,7 +60,7 @@ export default function Testimonials() {
                 </div>
                 <div className="text-3xl font-black leading-none text-white/8">"</div>
               </div>
-              <blockquote className="mt-4 flex-1 text-[15px] leading-8 text-slate-300">
+              <blockquote className="mt-4 flex-1 text-[15px] leading-7 text-slate-300 sm:leading-8">
                 "{testimonial.quote}"
               </blockquote>
               <div className="mt-5 flex items-center gap-3 border-t border-white/10 pt-4">
@@ -78,7 +78,7 @@ export default function Testimonials() {
             </div>
           ))}
 
-          <div className="grid grid-cols-2 gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 lg:grid-cols-1">
+          <div className="grid grid-cols-1 gap-3 rounded-2xl border border-white/10 bg-white/5 p-4 min-[420px]:grid-cols-3 lg:grid-cols-1">
             {stats.map((stat) => (
               <div
                 key={stat.label}

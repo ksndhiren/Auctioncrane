@@ -118,7 +118,7 @@ function SellerForm() {
             value={form.fullName}
             onChange={set("fullName")}
             placeholder="John"
-            className="h-9 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227] focus:ring-[#c9a227]"
+            className="h-10 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227] focus:ring-[#c9a227]"
           />
         </div>
         <div>
@@ -129,7 +129,7 @@ function SellerForm() {
             value={form.company}
             onChange={set("company")}
             placeholder="Smith Crane Co."
-            className="h-9 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
+            className="h-10 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
           />
         </div>
         <div>
@@ -142,7 +142,7 @@ function SellerForm() {
             value={form.email}
             onChange={set("email")}
             placeholder="you@example.com"
-            className="h-9 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
+            className="h-10 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
           />
         </div>
         <div>
@@ -154,7 +154,7 @@ function SellerForm() {
             value={form.phone}
             onChange={set("phone")}
             placeholder="Your phone"
-            className="h-9 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
+            className="h-10 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
           />
         </div>
         <div>
@@ -165,7 +165,7 @@ function SellerForm() {
             required
             value={form.craneType}
             onChange={set("craneType")}
-            className="h-9 w-full rounded-md border border-white/20 bg-white/10 px-3 text-sm text-white focus:border-[#c9a227] focus:outline-none focus:ring-1 focus:ring-[#c9a227]"
+            className="h-10 w-full rounded-md border border-white/20 bg-white/10 px-3 text-sm text-white focus:border-[#c9a227] focus:outline-none focus:ring-1 focus:ring-[#c9a227]"
           >
             <option value="" className="bg-[#101827]">
               Select Equipment Type
@@ -184,7 +184,7 @@ function SellerForm() {
           <select
             value={form.preferredTimeframe}
             onChange={set("preferredTimeframe")}
-            className="h-9 w-full rounded-md border border-white/20 bg-white/10 px-3 text-sm text-white focus:border-[#c9a227] focus:outline-none focus:ring-1 focus:ring-[#c9a227]"
+            className="h-10 w-full rounded-md border border-white/20 bg-white/10 px-3 text-sm text-white focus:border-[#c9a227] focus:outline-none focus:ring-1 focus:ring-[#c9a227]"
           >
             <option value="" className="bg-[#101827]">
               Select Preferred Method
@@ -284,7 +284,7 @@ function BuyerForm() {
             value={form.fullName}
             onChange={set("fullName")}
             placeholder="Jane"
-            className="h-9 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
+            className="h-10 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
           />
         </div>
         <div>
@@ -295,7 +295,7 @@ function BuyerForm() {
             value={form.company}
             onChange={set("company")}
             placeholder="Your company"
-            className="h-9 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
+            className="h-10 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
           />
         </div>
         <div>
@@ -308,7 +308,7 @@ function BuyerForm() {
             value={form.email}
             onChange={set("email")}
             placeholder="you@example.com"
-            className="h-9 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
+            className="h-10 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
           />
         </div>
         <div>
@@ -320,7 +320,7 @@ function BuyerForm() {
             value={form.phone}
             onChange={set("phone")}
             placeholder="Fleet buyer, contractor, dealer..."
-            className="h-9 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
+            className="h-10 border-white/20 bg-white/10 text-white placeholder:text-gray-500 focus:border-[#c9a227]"
           />
         </div>
       </div>
@@ -333,7 +333,7 @@ function BuyerForm() {
           <select
             value={form.budgetRange}
             onChange={set("budgetRange")}
-            className="h-9 w-full rounded-md border border-white/20 bg-white/10 px-3 text-sm text-white focus:border-[#c9a227] focus:outline-none focus:ring-1 focus:ring-[#c9a227]"
+            className="h-10 w-full rounded-md border border-white/20 bg-white/10 px-3 text-sm text-white focus:border-[#c9a227] focus:outline-none focus:ring-1 focus:ring-[#c9a227]"
           >
             <option value="" className="bg-[#101827]">
               Select Location
@@ -357,7 +357,7 @@ function BuyerForm() {
                 equipmentInterest: event.target.value ? [event.target.value] : [],
               }))
             }
-            className="h-9 w-full rounded-md border border-white/20 bg-white/10 px-3 text-sm text-white focus:border-[#c9a227] focus:outline-none focus:ring-1 focus:ring-[#c9a227]"
+            className="h-10 w-full rounded-md border border-white/20 bg-white/10 px-3 text-sm text-white focus:border-[#c9a227] focus:outline-none focus:ring-1 focus:ring-[#c9a227]"
           >
             <option value="" className="bg-[#101827]">
               Select Equipment
@@ -406,20 +406,20 @@ export default function LeadForms() {
   return (
     <section id="connect" className="bg-[#101827] py-14 lg:py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-start">
+        <div className="grid gap-6 lg:grid-cols-[0.8fr_1.2fr] lg:items-start lg:gap-8">
           <div>
             <span className="text-sm font-bold uppercase text-[#c9a227]">
               Connect With Us
             </span>
-            <h2 className="mt-4 text-3xl font-black tracking-tight text-white sm:text-4xl">
+            <h2 className="mt-3 text-2xl font-black tracking-tight text-white sm:mt-4 sm:text-4xl">
               Speak With Marketplace Specialists
             </h2>
-            <p className="mt-4 max-w-xl text-base leading-7 text-slate-300">
+            <p className="mt-3 max-w-xl text-[15px] leading-6 text-slate-300 sm:mt-4 sm:text-base sm:leading-7">
               Connect with our team to discuss crane inventory, equipment
               listings, auctions, or marketplace opportunities.
             </p>
 
-            <div className="mt-8 space-y-4 rounded-lg border border-white/10 bg-white/5 p-6">
+            <div className="mt-6 space-y-4 rounded-lg border border-white/10 bg-white/5 p-5 sm:mt-8 sm:p-6">
               <div className="flex items-start gap-3">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#101827] text-[#c9a227]">
                   <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -432,7 +432,7 @@ export default function LeadForms() {
                   </div>
                   <a
                     href="tel:+16015086207"
-                    className="mt-1 block text-lg font-black text-white hover:text-[#c9a227]"
+                    className="mt-1 block text-base font-black text-white hover:text-[#c9a227] sm:text-lg"
                   >
                     601.508.6207
                   </a>
@@ -450,7 +450,7 @@ export default function LeadForms() {
                   </div>
                   <a
                     href="mailto:bryan.c@jeffmartinauctioneers.com"
-                    className="mt-1 block truncate text-lg font-black text-white hover:text-[#c9a227]"
+                    className="mt-1 block truncate text-base font-black text-white hover:text-[#c9a227] sm:text-lg"
                   >
                     bryan.c@jeffmartinauctioneers.com
                   </a>
@@ -475,8 +475,8 @@ export default function LeadForms() {
             </div>
           </div>
 
-          <div className="rounded-lg bg-[linear-gradient(180deg,#101827_0%,#172234_100%)] p-5 text-white shadow-[0_22px_60px_rgba(15,23,37,0.2)] lg:p-6">
-            <div className="mx-auto mb-5 flex max-w-sm rounded-md border border-white/15 p-1">
+          <div className="rounded-lg bg-[linear-gradient(180deg,#101827_0%,#172234_100%)] p-4 text-white shadow-[0_22px_60px_rgba(15,23,37,0.2)] sm:p-5 lg:p-6">
+            <div className="mx-auto mb-5 flex w-full max-w-sm rounded-md border border-white/15 p-1">
               <button
                 data-tab="buyer"
                 onClick={() => setActive("buyer")}

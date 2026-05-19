@@ -48,20 +48,20 @@ export default function FleetSolutions() {
             <p className="text-sm font-bold uppercase text-[#c9a227]">
               Commercial & Fleet Solutions
             </p>
-          <h2 className="mt-4 text-3xl font-black tracking-tight sm:text-4xl">
+          <h2 className="mt-3 text-2xl font-black tracking-tight sm:mt-4 sm:text-4xl">
             Equipment Marketplace Solutions
           </h2>
-          <p className="mt-4 max-w-xl text-base leading-7 text-slate-300">
+          <p className="mt-3 max-w-xl text-[15px] leading-6 text-slate-300 sm:mt-4 sm:text-base sm:leading-7">
             Supporting dealers, contractors, and fleet operators with scalable
             equipment visibility.
           </p>
           </div>
 
-          <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-5">
+          <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
             {solutions.map((solution, index) => (
               <div
                 key={solution.title}
-                className="rounded-lg border border-white/10 bg-white/5 p-5 backdrop-blur-sm"
+                className="rounded-lg border border-white/10 bg-white/5 p-4 backdrop-blur-sm sm:p-5"
               >
                 <div className="inline-flex h-11 w-11 items-center justify-center rounded-full bg-[#c9a227]/15 text-[#c9a227]">
                   {icons[index]}

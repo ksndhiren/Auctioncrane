@@ -34,27 +34,27 @@ const icons = [
 
 export default function WhyUs() {
   return (
-    <section id="why-us" className="bg-[#fcfcfd] py-16 lg:py-20">
+    <section id="why-us" className="bg-[#fcfcfd] py-14 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <span className="text-sm font-bold uppercase text-[#c9a227]">
             Why Choose Jeff Martin Auctioneers
           </span>
-          <h2 className="mt-4 text-3xl font-black tracking-tight text-[#0f1725] sm:text-4xl">
+          <h2 className="mt-3 text-2xl font-black tracking-tight text-[#0f1725] sm:mt-4 sm:text-4xl">
             Trusted Crane Marketplace & Auction Specialists
           </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-slate-600">
+          <p className="mx-auto mt-3 max-w-3xl text-[15px] leading-6 text-slate-600 sm:mt-4 sm:text-base sm:leading-7">
             We help buyers and sellers connect through direct inventory
             listings, upcoming auctions, dealer equipment, and commercial heavy
             equipment opportunities.
           </p>
         </div>
 
-        <div className="mt-12 grid gap-4 md:grid-cols-3">
+        <div className="mt-8 grid gap-4 sm:mt-12 md:grid-cols-3">
           {reasons.map((reason, index) => (
             <div
               key={reason.title}
-              className="rounded-lg border border-slate-200 bg-white p-6 shadow-[0_14px_34px_rgba(15,23,37,0.06)] transition hover:-translate-y-1 hover:border-[#c9a227]/40"
+              className="rounded-lg border border-slate-200 bg-white p-5 shadow-[0_14px_34px_rgba(15,23,37,0.06)] transition hover:-translate-y-1 hover:border-[#c9a227]/40 sm:p-6"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#101827] text-[#c9a227]">
                 {icons[index]}

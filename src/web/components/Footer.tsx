@@ -4,18 +4,18 @@ export default function Footer() {
   return (
     <footer className="border-t border-white/5 bg-[#0b1220]">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 lg:py-14">
-        <div className="grid gap-10 lg:grid-cols-[1.1fr_0.8fr_0.8fr_0.8fr_0.8fr_0.9fr]">
+        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-[1.1fr_0.8fr_0.8fr_0.8fr_0.8fr_0.9fr] lg:gap-10">
           <div>
             <img
               src="/Cranesauctions.png"
               alt="Jeff Martin Auctioneers"
               width={1920}
               height={680}
-              className="h-auto w-[150px] max-w-full"
+              className="h-auto w-[132px] max-w-full sm:w-[150px]"
               loading="lazy"
               decoding="async"
             />
-            <p className="mt-4 max-w-sm text-sm leading-7 text-slate-400">
+            <p className="mt-4 max-w-sm text-sm leading-6 text-slate-400 sm:leading-7">
               The trusted crane marketplace and auction specialists connecting
               buyers, sellers, dealers, and contractors across the USA.
             </p>
@@ -47,7 +47,7 @@ export default function Footer() {
             </h4>
             <ul className="space-y-2.5">
               {[
-                { label: "Upcoming Auctions", href: "#auctions" },
+                { label: "Upcoming Auctions", href: "/#auctions" },
                 { label: "Auction Calendar", href: "https://www.jeffmartinauctioneers.com/auctions" },
                 { label: "Auction Terms", href: "https://www.jeffmartinauctioneers.com/auctions" },
                 { label: "Buyer Registration", href: "https://www.jeffmartinauctioneers.com/auctions" },
@@ -129,7 +129,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col gap-4 border-t border-white/5 pt-8 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-8 flex flex-col gap-4 border-t border-white/5 pt-8 sm:mt-10 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-xs text-slate-500">
             &copy; {year} Jeff Martin Auctioneers. All rights reserved.
           </p>

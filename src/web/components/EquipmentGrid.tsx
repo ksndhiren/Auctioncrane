@@ -11,22 +11,22 @@ const equipment = [
 
 export default function EquipmentGrid() {
   return (
-    <section id="equipment" className="bg-white py-16 lg:py-20">
+    <section id="equipment" className="bg-white py-14 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <span className="text-sm font-bold uppercase text-[#c9a227]">
             Explore Categories
           </span>
-          <h2 className="mt-4 text-3xl font-black tracking-tight text-[#0f1725] sm:text-4xl">
+          <h2 className="mt-3 text-2xl font-black tracking-tight text-[#0f1725] sm:mt-4 sm:text-4xl">
             Browse Crane & Equipment Categories
           </h2>
-          <p className="mx-auto mt-4 max-w-3xl text-base leading-7 text-slate-600">
+          <p className="mx-auto mt-3 max-w-3xl text-[15px] leading-6 text-slate-600 sm:mt-4 sm:text-base sm:leading-7">
             Explore crane inventory, dealer equipment, and heavy machinery
             across multiple equipment categories.
           </p>
         </div>
 
-        <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4 xl:grid-cols-8">
+        <div className="mt-8 grid grid-cols-2 gap-3 sm:mt-10 sm:gap-4 md:grid-cols-4 xl:grid-cols-8">
           {equipment.map((item) => (
             <div
               key={item.name}
@@ -39,11 +39,11 @@ export default function EquipmentGrid() {
                 decoding="async"
                 width={item.width}
                 height={item.height}
-                className="h-36 w-full object-cover object-center transition-transform duration-500 group-hover:scale-105 md:h-40 xl:h-36"
+                className="h-32 w-full object-cover object-center transition-transform duration-500 group-hover:scale-105 md:h-40 xl:h-36"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0f1725] via-[#0f1725]/30 to-transparent" />
-              <div className="absolute inset-x-0 bottom-0 p-4">
-                <h3 className="text-sm font-black leading-tight text-white md:text-[0.95rem]">
+              <div className="absolute inset-x-0 bottom-0 p-3 sm:p-4">
+                <h3 className="text-[13px] font-black leading-tight text-white md:text-[0.95rem]">
                   {item.name}
                 </h3>
               </div>

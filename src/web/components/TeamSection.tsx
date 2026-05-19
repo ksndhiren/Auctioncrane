@@ -40,10 +40,10 @@ export default function TeamSection() {
             <span className="text-sm font-bold uppercase text-[#c9a227]">
               Meet Our Team
             </span>
-            <h2 className="mt-4 text-3xl font-black tracking-tight text-[#0f1725] sm:text-4xl">
+            <h2 className="mt-3 text-2xl font-black tracking-tight text-[#0f1725] sm:mt-4 sm:text-4xl">
               Marketplace & Auction Specialists
             </h2>
-            <p className="mt-3 max-w-2xl text-base leading-7 text-slate-600">
+            <p className="mt-3 max-w-2xl text-[15px] leading-6 text-slate-600 sm:text-base sm:leading-7">
               Our experienced team is here to help you buy equipment, sell
               inventory, and succeed in today&apos;s equipment market.
             </p>
@@ -54,7 +54,7 @@ export default function TeamSection() {
                   key={member.name}
                   className="flex h-full flex-col overflow-hidden rounded-lg border border-slate-200 bg-white shadow-[0_14px_34px_rgba(15,23,37,0.08)]"
                 >
-                  <div className="relative h-60 overflow-hidden bg-slate-100">
+                  <div className="relative h-56 overflow-hidden bg-slate-100 sm:h-60">
                     <img
                       src={member.image}
                       alt={member.name}
@@ -71,11 +71,11 @@ export default function TeamSection() {
                       <div className="text-lg font-black text-[#0f1725]">
                         {member.name}
                       </div>
-                      <div className="mt-1 min-h-9 text-sm font-semibold leading-5 text-[#9f7c18]">
+                      <div className="mt-1 min-h-9 text-[13px] font-semibold leading-5 text-[#9f7c18] sm:text-sm">
                         {member.role}
                       </div>
                     </div>
-                    <div className="mt-3 flex-1 text-sm leading-6 text-slate-600">
+                    <div className="mt-3 flex-1 text-[14px] leading-6 text-slate-600 sm:text-sm">
                       <p>{member.bio}</p>
                     </div>
                     <div className="mt-3 space-y-2 border-t border-slate-100 pt-3">

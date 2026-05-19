@@ -65,7 +65,7 @@ function StepCard({ step }: { step: Step }) {
 
 export default function HowItWorks() {
   return (
-    <section id="how-it-works" className="bg-[#101827] py-16 lg:py-20">
+    <section id="how-it-works" className="bg-[#101827] py-14 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <span
@@ -75,13 +75,13 @@ export default function HowItWorks() {
             How It Works
           </span>
           <h2
-            className="mt-3 text-3xl font-black leading-tight text-white sm:text-4xl lg:text-5xl"
+            className="mt-3 text-2xl font-black leading-tight text-white sm:text-4xl lg:text-5xl"
             style={{ fontFamily: "'Chakra Petch', sans-serif" }}
           >
             Simple Crane Marketplace Process
           </h2>
           <p
-            className="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-300"
+            className="mx-auto mt-3 max-w-2xl text-[15px] leading-6 text-slate-300 sm:mt-4 sm:text-base sm:leading-7"
             style={{ fontFamily: "'Manrope', sans-serif" }}
           >
             A streamlined process for crane buyers, equipment dealers, and
@@ -89,8 +89,8 @@ export default function HowItWorks() {
           </p>
         </div>
 
-        <div className="mt-12 grid gap-8 lg:grid-cols-2">
-          <div className="rounded-lg border border-white/10 bg-white/5 p-7 shadow-[0_22px_60px_rgba(0,0,0,0.18)] lg:p-8">
+        <div className="mt-8 grid gap-5 sm:mt-12 sm:gap-8 lg:grid-cols-2">
+          <div className="rounded-lg border border-white/10 bg-white/5 p-5 shadow-[0_22px_60px_rgba(0,0,0,0.18)] sm:p-7 lg:p-8">
             <div className="mb-5 flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#c9a227]/15 text-[#c9a227]">
                 <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -111,14 +111,14 @@ export default function HowItWorks() {
             </div>
             <a
               href="#connect"
-              className="mt-8 inline-flex items-center gap-2 rounded bg-[#c9a227] px-6 py-3 text-sm font-black uppercase text-[#101827] transition-colors hover:bg-[#b8911f]"
+              className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded bg-[#c9a227] px-6 py-3 text-sm font-black uppercase text-[#101827] transition-colors hover:bg-[#b8911f] sm:mt-8 sm:w-auto"
               style={{ fontFamily: "'Chakra Petch', sans-serif" }}
             >
               Sell Your Equipment
             </a>
           </div>
 
-          <div className="rounded-lg border border-white/10 bg-white/5 p-7 shadow-[0_22px_60px_rgba(0,0,0,0.18)] lg:p-8">
+          <div className="rounded-lg border border-white/10 bg-white/5 p-5 shadow-[0_22px_60px_rgba(0,0,0,0.18)] sm:p-7 lg:p-8">
             <div className="mb-5 flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-[#c9a227]/15 text-[#c9a227]">
                 <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -140,7 +140,7 @@ export default function HowItWorks() {
             </div>
             <a
               href="#connect"
-              className="mt-8 inline-flex items-center gap-2 rounded bg-[#c9a227] px-6 py-3 text-sm font-black uppercase text-[#101827] transition-colors hover:bg-[#b8911f]"
+              className="mt-6 inline-flex w-full items-center justify-center gap-2 rounded bg-[#c9a227] px-6 py-3 text-sm font-black uppercase text-[#101827] transition-colors hover:bg-[#b8911f] sm:mt-8 sm:w-auto"
               style={{ fontFamily: "'Chakra Petch', sans-serif" }}
             >
               Browse Inventory

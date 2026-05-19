@@ -152,6 +152,8 @@ html {
 /* Typography overrides */
 body {
   font-family: 'Manrope', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 h1, h2, h3, h4, h5, h6,
@@ -192,4 +194,14 @@ h1, h2, h3, h4, h5, h6,
 .blog-prose li {
   margin-top: 0.75rem;
   line-height: 1.8;
+}
+
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+@media (min-width: 1024px) {
+  section[id] {
+    scroll-margin-top: 6.5rem;
+  }
 }

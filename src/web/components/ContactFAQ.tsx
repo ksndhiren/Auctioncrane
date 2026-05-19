@@ -32,17 +32,17 @@ export default function ContactFAQ() {
   const [open, setOpen] = useState<number | null>(null);
 
   return (
-    <section id="faq" className="bg-white py-16 lg:py-20">
+    <section id="faq" className="bg-white py-14 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        <div className="grid gap-8 lg:grid-cols-[1fr_1fr]">
+        <div className="grid gap-6 lg:grid-cols-[1fr_1fr] lg:gap-8">
           <div>
             <p className="text-sm font-bold uppercase text-[#c9a227]">
               Frequently Asked Questions
             </p>
-            <h2 className="mt-4 text-3xl font-black tracking-tight text-[#0f1725] sm:text-4xl">
+            <h2 className="mt-3 text-2xl font-black tracking-tight text-[#0f1725] sm:mt-4 sm:text-4xl">
               Crane Marketplace FAQ
             </h2>
-            <div className="mt-8 space-y-3">
+            <div className="mt-6 space-y-3 sm:mt-8">
               {faqs.map((faq, index) => (
                 <div
                   key={faq.question}
@@ -50,9 +50,9 @@ export default function ContactFAQ() {
                 >
                   <button
                     onClick={() => setOpen(open === index ? null : index)}
-                    className="flex w-full items-start justify-between gap-3 p-5 text-left transition-colors hover:bg-slate-50"
+                    className="flex w-full items-start justify-between gap-3 p-4 text-left transition-colors hover:bg-slate-50 sm:p-5"
                   >
-                    <span className="text-sm font-bold leading-snug text-[#0f1725]">
+                    <span className="text-[15px] font-bold leading-snug text-[#0f1725] sm:text-sm">
                       {faq.question}
                     </span>
                     <span
@@ -66,7 +66,7 @@ export default function ContactFAQ() {
                     </span>
                   </button>
                   {open === index ? (
-                    <div className="border-t border-slate-100 px-5 pb-5 text-sm leading-relaxed text-slate-600">
+                    <div className="border-t border-slate-100 px-4 pb-4 text-sm leading-relaxed text-slate-600 sm:px-5 sm:pb-5">
                       <p className="pt-3">{faq.answer}</p>
                     </div>
                   ) : null}
@@ -85,31 +85,31 @@ export default function ContactFAQ() {
                 decoding="async"
                 width={1400}
                 height={594}
-                className="min-h-[520px] w-full object-cover"
+                className="min-h-[360px] w-full object-cover sm:min-h-[520px]"
               />
               <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(10,15,27,.92)_0%,rgba(10,15,27,.82)_52%,rgba(10,15,27,.42)_100%)]" />
-              <div className="absolute inset-0 flex items-end p-8 lg:p-10">
+              <div className="absolute inset-0 flex items-end p-5 sm:p-8 lg:p-10">
                 <div className="max-w-lg">
                   <p className="text-sm font-bold uppercase text-[#c9a227]">
                     Ready To Get Started?
                   </p>
-                  <h2 className="mt-4 text-4xl font-black leading-tight">
+                  <h2 className="mt-3 text-3xl font-black leading-tight sm:mt-4 sm:text-4xl">
                     Explore Crane Inventory Across The USA
                   </h2>
-                  <p className="mt-4 text-base leading-7 text-slate-300">
+                  <p className="mt-3 text-[15px] leading-6 text-slate-300 sm:mt-4 sm:text-base sm:leading-7">
                     Browse crane inventory, upcoming auctions, dealer listings,
                     and equipment marketplace opportunities.
                   </p>
                   <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                     <a
                       href="#equipment"
-                      className="inline-flex min-h-12 items-center justify-center rounded bg-[#c9a227] px-5 text-sm font-black uppercase text-[#101827] transition hover:bg-[#b8911f]"
+                      className="inline-flex min-h-12 w-full items-center justify-center rounded bg-[#c9a227] px-5 text-sm font-black uppercase text-[#101827] transition hover:bg-[#b8911f] sm:w-auto"
                     >
                       Browse Crane Marketplace
                     </a>
                     <a
                       href="#connect"
-                      className="inline-flex min-h-12 items-center justify-center rounded border border-white/25 px-5 text-sm font-black uppercase text-white transition hover:border-[#c9a227] hover:text-[#c9a227]"
+                      className="inline-flex min-h-12 w-full items-center justify-center rounded border border-white/25 px-5 text-sm font-black uppercase text-white transition hover:border-[#c9a227] hover:text-[#c9a227] sm:w-auto"
                     >
                       Sell Your Equipment
                     </a>

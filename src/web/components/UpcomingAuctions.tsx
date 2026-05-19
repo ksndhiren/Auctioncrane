@@ -42,17 +42,17 @@ const events = [
 
 export default function UpcomingAuctions() {
   return (
-    <section id="auctions" className="bg-[#f8fafc] py-16 lg:py-20">
+    <section id="auctions" className="bg-[#f8fafc] py-14 lg:py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-10 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <span className="text-sm font-bold uppercase text-[#c9a227]">
               Upcoming Crane Auctions
             </span>
-            <h2 className="mt-4 text-3xl font-black tracking-tight text-[#0f1725] sm:text-4xl">
+            <h2 className="mt-3 text-2xl font-black tracking-tight text-[#0f1725] sm:mt-4 sm:text-4xl">
               Upcoming Crane Auctions
             </h2>
-            <p className="mt-3 max-w-2xl text-base leading-7 text-slate-600">
+            <p className="mt-3 max-w-2xl text-[15px] leading-6 text-slate-600 sm:text-base sm:leading-7">
               Browse featured crane auctions and equipment opportunities from
               across the marketplace.
             </p>
@@ -61,7 +61,7 @@ export default function UpcomingAuctions() {
             href="https://www.jeffmartinauctioneers.com/auctions"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded border border-[#0f1725] px-5 py-3 text-sm font-black uppercase text-[#0f1725] transition hover:bg-[#0f1725] hover:text-white whitespace-nowrap"
+            className="inline-flex w-full items-center justify-center gap-2 rounded border border-[#0f1725] px-5 py-3 text-sm font-black uppercase text-[#0f1725] transition hover:bg-[#0f1725] hover:text-white sm:w-auto whitespace-nowrap"
           >
             View All Auctions
             <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -70,7 +70,7 @@ export default function UpcomingAuctions() {
           </a>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-3">
+        <div className="grid gap-5 lg:grid-cols-3">
           {events.map((event) => (
             <div
               key={event.title}
@@ -80,7 +80,7 @@ export default function UpcomingAuctions() {
                   : "border-slate-200 bg-white"
               }`}
             >
-              <div className="relative h-40 overflow-hidden">
+              <div className="relative h-36 overflow-hidden sm:h-40">
                 <img
                   src={event.image}
                   alt={event.title}
@@ -103,12 +103,12 @@ export default function UpcomingAuctions() {
                 </div>
               </div>
 
-              <div className="flex flex-1 flex-col p-5">
+              <div className="flex flex-1 flex-col p-4 sm:p-5">
                 <div className="mb-2 text-xs font-bold uppercase text-[#c9a227]">
                   {event.type}
                 </div>
                 <div
-                  className={`min-h-[72px] text-xl font-black leading-snug ${
+                  className={`min-h-[64px] text-lg font-black leading-snug sm:min-h-[72px] sm:text-xl ${
                     event.featured ? "text-white" : "text-[#0f1725]"
                   }`}
                 >
@@ -137,7 +137,7 @@ export default function UpcomingAuctions() {
                   {event.location}
                 </div>
                 <p
-                  className={`mt-3 min-h-[84px] text-sm leading-6 ${
+                  className={`mt-3 min-h-[72px] text-sm leading-6 ${
                     event.featured ? "text-slate-300" : "text-slate-600"
                   }`}
                 >
