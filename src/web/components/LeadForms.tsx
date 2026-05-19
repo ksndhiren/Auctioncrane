@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -402,6 +402,26 @@ function BuyerForm() {
 
 export default function LeadForms() {
   const [active, setActive] = useState<"seller" | "buyer">("buyer");
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const syncLeadIntent = () => {
+      const params = new URLSearchParams(window.location.search);
+      const leadIntent = params.get("lead");
+
+      if (leadIntent === "seller" || leadIntent === "buyer") {
+        setActive(leadIntent);
+      }
+    };
+
+    syncLeadIntent();
+    window.addEventListener("popstate", syncLeadIntent);
+
+    return () => window.removeEventListener("popstate", syncLeadIntent);
+  }, []);
 
   return (
     <section id="connect" className="bg-[#101827] py-14 lg:py-16">

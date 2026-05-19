@@ -146,7 +146,7 @@ const post: BlogPost = {
       title: "Need help listing a used crane for auction?",
       body: "Talk with CranesAuctions about your equipment, documents, and sale goals. We can help you decide whether auction is the right channel and what you need to prepare before listing.",
       buttonLabel: "Request a Valuation",
-      buttonHref: "https://www.cranesauctions.com/contact",
+      buttonHref: "/?lead=seller#connect",
     },
   };
 
