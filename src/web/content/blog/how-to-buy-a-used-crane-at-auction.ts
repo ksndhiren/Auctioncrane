@@ -52,7 +52,7 @@ const post: BlogPost = {
         image: {
           src: "https://images.pexels.com/photos/19091513/pexels-photo-19091513.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
           alt: "Close-up of a yellow industrial crane with openwork design against a cloudy blue sky.",
-          creditName: "Михаил Крамор",
+          creditName: "\u041c\u0438\u0445\u0430\u0438\u043b \u041a\u0440\u0430\u043c\u043e\u0440",
           creditUrl: "https://www.pexels.com/photo/rusty-yellow-crane-19091513/",
         },
       },
@@ -70,10 +70,10 @@ const post: BlogPost = {
           "Confirm cab controls, gauges, and safety systems appear functional",
         ],
         image: {
-          src: "https://images.pexels.com/photos/29502221/pexels-photo-29502221.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-          alt: "A 40 ton ACE rough terrain crane parked in an industrial yard in Faridabad, India.",
+          src: "https://images.pexels.com/photos/29502220/pexels-photo-29502220.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+          alt: "A 40 ton ACE rough terrain crane parked outdoors in an industrial yard in Faridabad, India.",
           creditName: "Action Construction  Equipment Ltd. - ACE",
-          creditUrl: "https://www.pexels.com/photo/40-ton-ace-rough-terrain-crane-in-faridabad-yard-29502221/",
+          creditUrl: "https://www.pexels.com/photo/40-ton-ace-rough-terrain-crane-in-industrial-yard-29502220/",
         },
       },
       {
